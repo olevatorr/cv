@@ -1,166 +1,112 @@
 import {
-  AmbitLogo,
   BarepapersLogo,
-  BimLogo,
-  CDGOLogo,
-  ClevertechLogo,
   ConsultlyLogo,
-  EvercastLogo,
-  Howdy,
   JarockiMeLogo,
-  JojoMobileLogo,
   Minimal,
-  MobileVikingsLogo,
-  MonitoLogo,
-  NSNLogo,
   ParabolLogo,
-  TastyCloudLogo,
   YearProgressLogo,
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { ResumeData } from '@/data/type';
 
-export const RESUME_DATA = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
+
+
+export const RESUME_DATA:ResumeData = {
+  name: "Otis Chen",
+  initials: "OC",
+  location: "Taoyuan, Taiwan",
+  locationLink: "https://maps.app.goo.gl/AMvSWuNNUMALzuNM8",
   about:
-    "Detail-oriented Full Stack Engineer dedicated to building high-quality products.",
+    "Frontend Developer committed to detail-oriented solutions and logical problem-solving, creating impactful user experiences.",
+  slogan: "Precision in code, logic in action",
   summary:
-    "As a Full Stack Engineer, I specialize in taking products from concept to launch. I excel in leading teams and creating environments where individuals perform at their best. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience working remotely with companies worldwide.",
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
+    "Aspiring Front-end Developer with a background in sales, leveraging strong problem-solving skills and business acumen. Proficient in JavaScript, Vue3, and responsive web design. Committed to creating user-centric, efficient web solutions through continuous learning and application of modern technologies.",
+  avatarUrl: "https://avatars.githubusercontent.com/u/166091382?v=4",
   personalWebsiteUrl: "https://jarocki.me",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "otis0059@gmail.com",
+    tel: "+886928921465",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/olevatorr",
         icon: GitHubIcon,
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/otis-chen-504a22166/",
         icon: LinkedInIcon,
-      },
-      {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: XIcon,
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "Chung Chou University",
+      degree: "Bachelor's Degree in Deliartment of Marketing and Logistics Management",
+      start: "2012",
+      end: "2016",
     },
   ],
   work: [
     {
-      company: "Film.io",
-      link: "https://film.io",
-      badges: ["Remote"],
-      title: "Software Architect",
+      company: "Tibame Vocational Training Center",
+      link: "https://www.tibame.com/",
+      badges: [null],
+      title: "Front-end Engineer Course",
       logo: ConsultlyLogo,
-      start: "2024",
-      end: null,
+      start: "2024.3",
+      end: "2024.7",
       description:
-        "Leading the development of the Film.io platform. Technologies: React, TypeScript, Node.js",
+        "Intensive front-end engineering program focusing on HTML, CSS3, HTML5, Vue3, PHP, and MySQL. Curriculum includes hands-on projects, culminating in both individual and team-based web applications. This in-person course provides comprehensive training in modern web development technologies and practical experience in collaborative software development.",
     },
     {
-      company: "Parabol",
-      link: "https://parabol.co",
-      badges: ["Remote"],
-      title: "Senior Full Stack Developer",
+      company: "PNY Technologies Asia Pacific Limited",
+      link: "https://www.pny.com.tw/tw/",
+      badges: [null],
+      title: "Sales Specialist",
+      logo: ConsultlyLogo,
+      start: "2021.10",
+      end: "2024.2",
+      description:
+        "Through effective cross-departmental communication and precise time management, I consistently met sales targets while optimizing customer relationship management and online shop operations, enhancing my analytical skills and efficiency in forecasting market trends.",
+    },
+    {
+      company: "Hwa Hsia Glass Co., Ltd.",
+      link: "https://www.hwahsiaglass.com/tw",
+      badges: [null],
+      title: "Sales Representative",
       logo: ParabolLogo,
-      start: "2021",
-      end: "2024",
+      start: "2020.6",
+      end: "2021.7",
       description:
-        "Implemented new features, led a squad, improved code delivery process, and initiated migration from Emotion to Tailwind CSS. Technologies: React, TypeScript, GraphQL",
-    },
-    {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote"],
-      title: "Lead Android Developer → Full Stack Developer",
-      logo: ClevertechLogo,
-      start: "2015",
-      end: "2021",
-      description:
-        "Created Android mobile apps and led teams for companies like Vision Media, DKMS, and AAA. Built a live streaming application for Evercast from scratch. Technologies: Android, Kotlin, React, TypeScript, GraphQL",
-    },
-    {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: [],
-      title: "Android Developer → Lead Android Developer",
-      logo: JojoMobileLogo,
-      start: "2012",
-      end: "2015",
-      description:
-        "Led the Android team and developed apps for major Polish companies like LOT, Polskie Radio, Agora, and PolskaPress",
-    },
-    {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: [],
-      title: "C/C++ Developer",
-      logo: NSNLogo,
-      start: "2010",
-      end: "2012",
-      description: "Developed and tested software for LTE base stations",
+        "By leveraging strong communication skills and implementing efficient time management strategies, I exceeded sales objectives while meticulously managing orders and analyzing customer needs, which significantly improved my problem-solving abilities and overall work efficiency.",
     },
   ],
   skills: [
     "JavaScript",
-    "TypeScript",
-    "React/Next.js/Remix",
-    "Node.js",
-    "GraphQL",
-    "Relay",
-    "WebRTC",
+    "Vue3",
+    "Sass",
+    "TailwindCSS",
+    "Git Flow",
+    "jQuery",
+    "HTML5",
+    "PHP",
+    "MySQL",
   ],
   projects: [
     {
-      title: "Parabol",
-      techStack: [
-        "Full Stack Developer",
-        "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
-      ],
+      title: "Blue Alert",
+      techStack: ["Side Project", "Vue3", "Sass", "D3.js", "Chart.js", "Fullcalendar", "GSAP"],
       description:
-        "The Agile meeting co-pilot that delivers better meetings with less effort",
-      logo: ParabolLogo,
+        "Led a multi-member team in creating a full-stack web application, utilizing Vue3's Composition API for frontend development, integrating diverse libraries for enhanced UX, and implementing backend solutions with PHP, MySQL, and external API integrations.",
+      logo: ConsultlyLogo,
       link: {
-        label: "github.com",
-        href: "https://parabol.co/",
+        label: "BlueAlert",
+        href: "https://tibamef2e.com/cid101/g1/",
       },
     },
     {
-      title: "Evercast",
-      techStack: [
-        "Lead Frontend Developer",
-        "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
-      ],
-      description:
-        "Creative collaboration platform that combines video conferencing and HD media streaming",
-      logo: EvercastLogo,
-      link: {
-        label: "evercast.us",
-        href: "https://www.evercast.us/",
-      },
-    },
-    {
-      title: "Consultly",
+      title: "Pet Hospital Online Shop",
       techStack: [
         "Side Project",
         "TypeScript",
@@ -169,51 +115,40 @@ export const RESUME_DATA = {
         "GraphQL",
         "WebRTC",
       ],
-      description: "A platform to build and grow your online business",
+      description: "Developed a comprehensive veterinary hospital website using vanilla JavaScript, implementing advanced features like appointment booking and e-commerce, thereby reinforcing core JS skills and demonstrating proficiency in DOM manipulation and LocalStorage utilization.",
       logo: ConsultlyLogo,
       link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
+        label: "Broods.com",
+        href: "https://personal-project-iota.vercel.app/",
       },
     },
     {
-      title: "Monito",
-      techStack: ["Side Project", "TypeScript", "Next.js", "Browser Extension"],
+      title: "Todo List",
+      techStack: ["Side Project", "Vue3", "TailwindCSS"],
       description:
-        "Browser extension that records everything happening in a web application",
-      logo: MonitoLogo,
-      link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
-      },
-    },
-    {
-      title: "Jarocki.me",
-      techStack: ["Side Project", "Next.js", "MDX"],
-      description:
-        "Personal website and blog. Built with Next.js and Notion API",
+        "Implemented a dynamic todo list using Vue's v-model and computed properties to manage input/output and render list items. The system allows users to remove items by clicking a \"remove\" button, which splices the corresponding index from the array. When an item is checked, it's automatically moved to the end of the list using JavaScript's sort() method.",
       logo: JarockiMeLogo,
       link: {
         label: "github.com",
-        href: "https://jarocki.me/",
+        href: "https://vercel.com/olevatorrs-projects/vue-project/todoList",
       },
     },
     {
-      title: "Minimal",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
+      title: "Weather API",
+      techStack: ["Side Project", "Vue3", "D3.js", "topojson","TailwindCSS"],
       description:
-        "Minimalist calendars, habit trackers, and planners generator",
+        " ",
       logo: Minimal,
       link: {
-        label: "useminimal.com",
-        href: "https://useminimal.com/",
+        label: "github.com",
+        href: "https://vue-project-one-blond.vercel.app/WeatherApi",
       },
     },
     {
-      title: "Barepapers",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
+      title: "Task Management System",
+      techStack: ["Side Project", "Vue3", "TailwindCSS"],
       description:
-        "Generates beautiful wallpapers using random shapes and gradients",
+        "Designed a task management system with \"Todo\", \"Processing\", and \"Done\" zones, utilizing empty arrays and the HTML5 Drag and Drop API. Tasks can be moved between zones using dataTransfer methods to push or splice items from the respective arrays.",
       logo: BarepapersLogo,
       link: {
         label: "barepapers.com",
@@ -221,8 +156,8 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Year progress",
-      techStack: ["Side Project", "TypeScript", "Next.js"],
+      title: "Shopping Cart",
+      techStack: ["Side Project", "Vue3", "TailwindCSS", "Pinia"],
       description: "Tracks current year progress and displays a countdown",
       logo: YearProgressLogo,
       link: {
@@ -230,58 +165,163 @@ export const RESUME_DATA = {
         href: "https://getyearprogress.com/",
       },
     },
+  ],
+} as const;
+
+
+export const RESUME_CN_DATA:ResumeData = {
+  name: "陳昇志 Otis Chen",
+  initials: "OC",
+  location: "桃園中壢區, 台灣",
+  locationLink: "https://maps.app.goo.gl/AMvSWuNNUMALzuNM8",
+  about:
+    "前端工程師  專注於以邏輯解決問題並不斷學習新技術，增強自我Coding實力",
+  slogan: "Precision in code, logic in action",
+  summary:
+    "熱忱的前端工程師轉職者，專注於JavaScript、Vue3和響應式網頁設計。善於將複雜需求轉化為流暢用戶體驗。在完成前端工程課程後，持續深化核心技能並按照Frontend Developer roadmap探索新技術，致力於提升解決問題的能力和技術實力，為職涯轉換奠定紮實基礎。",
+  avatarUrl: "https://avatars.githubusercontent.com/u/166091382?v=4",
+  personalWebsiteUrl: "https://jarocki.me",
+  contact: {
+    email: "otis0059@gmail.com",
+    tel: "+886928921465",
+    social: [
+      {
+        name: "GitHub",
+        url: "https://github.com/olevatorr",
+        icon: GitHubIcon,
+      },
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/otis-chen-504a22166/",
+        icon: LinkedInIcon,
+      },
+    ],
+  },
+  education: [
     {
-      title: "Mobile Vikings",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
+      school: "中州科技大學",
+      degree: "行銷與流通管理學系",
+      start: "2012",
+      end: "2016",
+    },
+  ],
+  work: [
+    {
+      company: "Tibame緯育中壢職訓中心",
+      link: "https://www.tibame.com/",
+      badges: [null],
+      title: "前端工程師課程",
+      logo: ConsultlyLogo,
+      start: "2024.3",
+      end: "2024.7",
       description:
-        "Android application for leading virtual mobile operator in Poland",
-      logo: MobileVikingsLogo,
+        "密集的前端工程培訓課程，專注於HTML、CSS3、HTML5、Vue3、PHP和MySQL。課程包含實作專案，最終完成個人和團隊網頁應用程式。這個實體課程提供現代網頁開發技術的全面培訓，並在協作軟體開發方面提供實務經驗。",
+    },
+    {
+      company: "PNY Technologies Asia Pacific Limited 必恩威亞太有限公司",
+      link: "https://www.pny.com.tw/tw/",
+      badges: [null],
+      title: "業務專員",
+      logo: ConsultlyLogo,
+      start: "2021.10",
+      end: "2024.2",
+      description:
+        "透過有效的跨部門溝通和精準的時間管理，我持續達成銷售目標，同時優化客戶關係管理和線上商店營運，提升了分析能力和預測市場趨勢的效率。",
+    },
+    {
+      company: "華夏玻璃股份有限公司",
+      link: "https://www.hwahsiaglass.com/tw",
+      badges: [null],
+      title: "國外業務專員",
+      logo: ParabolLogo,
+      start: "2020.6",
+      end: "2021.7",
+      description:
+        "運用強大的溝通技巧和實施高效的時間管理策略，我超越銷售目標，同時細心管理訂單並分析客戶需求，這顯著提升了我的問題解決能力和整體工作效率。",
+    },
+  ],
+  skills: [
+    "JavaScript",
+    "Vue3",
+    "Sass",
+    "TailwindCSS",
+    "Git Flow",
+    "jQuery",
+    "HTML5",
+    "PHP",
+    "MySQL",
+  ],
+  projects: [
+    {
+      title: "Blue Alert 藍色警界",
+      techStack: ["Side Project", "Vue3", "Sass", "Pinia","D3.js", "Chart.js", "Fullcalendar", "GSAP"],
+      description:
+        "帶領六人團隊開發全端網頁應用程式，運用Vue3的Composition API進行前端開發，整合多元函式庫以提升使用者體驗，並以PHP、MySQL實作後端解決方案，同時串接外部API。",
+      logo: ConsultlyLogo,
       link: {
-        label: "mobilevikings.pl",
-        href: "https://mobilevikings.pl/",
+        label: "BlueAlert",
+        href: "https://tibamef2e.com/cid101/g1/",
       },
     },
     {
-      title: "Howdy",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description: "Howdy is a place for joining communities you care about",
-      logo: Howdy,
+      title: "寵物醫院商城",
+      techStack: [
+        "Side Project",
+        "TypeScript",
+        "Next.js",
+        "Vite",
+        "GraphQL",
+        "WebRTC",
+      ],
+      description: "運用原生JavaScript開發全方位的獸醫院網站，實作預約掛號和電子商務等進階功能，藉此強化核心JS技能，並展現DOM操作和LocalStorage應用的專業能力。",
+      logo: ConsultlyLogo,
       link: {
-        label: "play.google.com",
-        href: "https://howdy.co/",
+        label: "Broods.com",
+        href: "https://personal-project-iota.vercel.app/",
       },
     },
     {
-      title: "Tastycloud",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
+      title: "Todo List",
+      techStack: ["Side Project", "Vue3", "TailwindCSS"],
       description:
-        "Android application for managing and displaying restaurant menus in kiosk mode",
-      logo: TastyCloudLogo,
+        "運用Vue的v-model和計算屬性實現動態待辦事項列表，用以管理輸入/輸出並渲染列表項目。系統允許使用者點擊「移除」按鈕來刪除項目，該操作會從陣列中剔除對應的索引。當項目被勾選時，會通過JavaScript的sort()方法自動將其移至列表末尾。",
+      logo: JarockiMeLogo,
       link: {
-        label: "tastycloud.fr",
-        href: "https://www.tastycloud.fr/",
+        label: "github.com",
+        href: "https://vercel.com/olevatorrs-projects/vue-project/todoList",
       },
     },
     {
-      title: "Ambit",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
+      title: "Weather API",
+      techStack: ["Side Project", "Vue3", "D3.js", "topojson","TailwindCSS"],
       description:
-        "Android application that helps with sharing your contact details",
-      logo: AmbitLogo,
+        "Minimalist calendars, habit trackers, and planners generator",
+      logo: Minimal,
+      link: {
+        label: "github.com",
+        href: "https://vue-project-one-blond.vercel.app/WeatherApi",
+      },
     },
     {
-      title: "Bim",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
+      title: "Task Management System",
+      techStack: ["Side Project", "Vue3", "TailwindCSS"],
       description:
-        "Android application that helps with booking a table in a restaurants",
-      logo: BimLogo,
+        "設計了一個任務管理系統，包含「待辦」、「進行中」和「已完成」三個區域，運用空陣列和HTML5 Drag API。任務可通過dataTransfer方法在區域間移動，實現對應陣列的推入或剔除操作。",
+      logo: BarepapersLogo,
+      link: {
+        label: "barepapers.com",
+        href: "https://barepapers.com/",
+      },
     },
     {
-      title: "Canal Digital GO",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Video streaming mobile application for Canal Digital subscribers",
-      logo: CDGOLogo,
+      title: "Shopping Cart",
+      techStack: ["Side Project", "Vue3", "TailwindCSS", "Pinia"],
+      description: "Tracks current year progress and displays a countdown",
+      logo: YearProgressLogo,
+      link: {
+        label: "getyearprogress.com",
+        href: "https://getyearprogress.com/",
+      },
     },
   ],
 } as const;
