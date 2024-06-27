@@ -253,7 +253,7 @@ export const RESUME_CN_DATA:ResumeData = {
   ],
   projects: [
     {
-      title: "Blue Alert 藍色警界",
+      title: "Blue Alert 藍色警戒",
       techStack: ["Side Project", "Vue3", "Sass", "Pinia","D3.js", "Chart.js", "Fullcalendar", "GSAP"],
       description:
         "帶領六人團隊開發全端網頁應用程式，運用Vue3的Composition API進行前端開發，整合多元函式庫以提升使用者體驗，並以PHP、MySQL實作後端解決方案，同時串接外部API。",

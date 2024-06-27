@@ -13,7 +13,6 @@ import { RESUME_DATA, RESUME_CN_DATA } from "@/data/resume-data";
 import { ResumeData } from '@/data/type';
 
 
-type ResumeData = typeof RESUME_DATA;
 
 export default function ResumeContent() {
     const [currentData, setCurrentData] = useState<ResumeData>(RESUME_DATA);
@@ -50,7 +49,7 @@ export default function ResumeContent() {
                             {currentData.location}
                         </a>
                     </p>
-                    <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden">
+                    <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground">
                         {currentData.contact.email ? (
                             <Button
                                 className="size-8"
@@ -84,7 +83,7 @@ export default function ResumeContent() {
                                 asChild
                             >
                                 <a href={social.url}>
-                                    {React.createElement(social.icon, { className: "size-4" })}
+                                    {React.createElement(social.icon as React.ComponentType<{ className?: string }>, { className: "size-4" })}
                                 </a>
                             </Button>
                         ))}
