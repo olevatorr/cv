@@ -7,7 +7,6 @@ export type ResumeData = {
     slogan: string;
     summary: string;
     avatarUrl: string;
-    personalWebsiteUrl: string;
     contact: {
         email: string;
         tel: string;
@@ -17,6 +16,7 @@ export type ResumeData = {
             icon: React.ComponentType;
         }>;
     };
+    Hobbies: string[];
     education: Array<{
         school: string;
         degree: string;

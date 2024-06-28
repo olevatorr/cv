@@ -22,7 +22,6 @@ export const RESUME_DATA:ResumeData = {
   summary:
     "Aspiring Front-end Developer with a background in sales, leveraging strong problem-solving skills and business acumen. Proficient in JavaScript, Vue3, and responsive web design. Committed to creating user-centric, efficient web solutions through continuous learning and application of modern technologies.",
   avatarUrl: "https://avatars.githubusercontent.com/u/166091382?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
   contact: {
     email: "otis0059@gmail.com",
     tel: "+886928921465",
@@ -39,6 +38,12 @@ export const RESUME_DATA:ResumeData = {
       },
     ],
   },
+  Hobbies: [
+    "Photography",
+    "Music",
+    "Weight Training",
+    "Traveling",
+  ],
   education: [
     {
       school: "Chung Chou University",
@@ -180,7 +185,6 @@ export const RESUME_CN_DATA:ResumeData = {
   summary:
     "熱忱的前端工程師轉職者，專注於JavaScript、Vue3和響應式網頁設計。善於將複雜需求轉化為流暢用戶體驗。在完成前端工程課程後，持續深化核心技能並按照Frontend Developer roadmap探索新技術，致力於提升解決問題的能力和技術實力，為職涯轉換奠定紮實基礎。",
   avatarUrl: "https://avatars.githubusercontent.com/u/166091382?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
   contact: {
     email: "otis0059@gmail.com",
     tel: "+886928921465",
@@ -197,6 +201,12 @@ export const RESUME_CN_DATA:ResumeData = {
       },
     ],
   },
+  Hobbies: [
+    "攝影",
+    "音樂",
+    "重訓",
+    "旅行",
+  ],
   education: [
     {
       school: "中州科技大學",
@@ -254,7 +264,7 @@ export const RESUME_CN_DATA:ResumeData = {
   projects: [
     {
       title: "Blue Alert 藍色警戒",
-      techStack: ["Side Project", "Vue3", "Sass", "Pinia","D3.js", "Chart.js", "Fullcalendar", "GSAP"],
+      techStack: ["Side Project", "Vue3", "Sass", "Pinia","D3.js", "Chart.js", "Bootstrap5", "Git flow", "Fullcalendar", "GSAP", "PHP", "MySQL"],
       description:
         "帶領六人團隊開發全端網頁應用程式，運用Vue3的Composition API進行前端開發，整合多元函式庫以提升使用者體驗，並以PHP、MySQL實作後端解決方案，同時串接外部API。",
       logo: ConsultlyLogo,

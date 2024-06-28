@@ -174,6 +174,17 @@ export default function ResumeContent() {
                 ))}
             </Section>
 
+            <Section>
+                <h2 className="text-xl font-bold">habbies</h2>
+                <div className="flex flex-wrap gap-1">
+                    {currentData.Hobbies.map((hobby) => (
+                        <Badge className="print:text-[10px]" key={hobby}>
+                            {hobby}
+                        </Badge>
+                    ))}
+                </div>
+            </Section>
+
             <Section className="scroll-mb-16">
                 <h2 className="text-xl font-bold">Projects</h2>
                 <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
@@ -191,10 +202,6 @@ export default function ResumeContent() {
 
             <CommandMenu
                 links={[
-                    {
-                        url: currentData.personalWebsiteUrl,
-                        title: "Personal Website",
-                    },
                     ...currentData.contact.social.map((socialMediaLink) => ({
                         url: socialMediaLink.url,
                         title: socialMediaLink.name,
