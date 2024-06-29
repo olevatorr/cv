@@ -20,7 +20,7 @@ export const RESUME_DATA:ResumeData = {
     "Frontend Developer committed to detail-oriented solutions and logical problem-solving, creating impactful user experiences.",
   slogan: "Precision in code, logic in action",
   summary:
-    "Aspiring Front-end Developer with a background in sales, leveraging strong problem-solving skills and business acumen. Proficient in JavaScript, Vue3, and responsive web design. Committed to creating user-centric, efficient web solutions through continuous learning and application of modern technologies.",
+    "Passionate frontend developer transitioning from sales fields, focusing on JavaScript, Vue3, and responsive web design. Skilled at transforming complex requirements into seamless user experiences. After completing a frontend engineering course, I continue to deepen core skills and explore new technologies following the Frontend Developer roadmap. Committed to enhancing problem-solving abilities and technical expertise, laying a solid foundation for my career transition.",
   avatarUrl: "https://avatars.githubusercontent.com/u/166091382?v=4",
   contact: {
     email: "otis0059@gmail.com",
@@ -49,7 +49,7 @@ export const RESUME_DATA:ResumeData = {
       school: "Chung Chou University",
       degree: "Bachelor's Degree in Deliartment of Marketing and Logistics Management",
       start: "2012",
-      end: "2016",
+      end: "2017",
     },
   ],
   work: [
@@ -114,11 +114,9 @@ export const RESUME_DATA:ResumeData = {
       title: "Pet Hospital Online Shop",
       techStack: [
         "Side Project",
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
+        "JavaScript",
+        "CSS3",
+        "HTML",
       ],
       description: "Developed a comprehensive veterinary hospital website using vanilla JavaScript, implementing advanced features like appointment booking and e-commerce, thereby reinforcing core JS skills and demonstrating proficiency in DOM manipulation and LocalStorage utilization.",
       logo: ConsultlyLogo,
@@ -142,7 +140,7 @@ export const RESUME_DATA:ResumeData = {
       title: "Weather API",
       techStack: ["Side Project", "Vue3", "D3.js", "topojson","TailwindCSS"],
       description:
-        " ",
+        "Implemented a weather forecast application by integrating the open weather data platform API to render a week-long weather forecast and process various data. Utilized topojson to address the issue of oversized geojson files. Rendered an interactive map of Taiwan using D3.js and registered click events, achieving an interactive weather query system.",
       logo: Minimal,
       link: {
         label: "github.com",
@@ -163,7 +161,7 @@ export const RESUME_DATA:ResumeData = {
     {
       title: "Shopping Cart",
       techStack: ["Side Project", "Vue3", "TailwindCSS", "Pinia"],
-      description: "Tracks current year progress and displays a countdown",
+      description: "Implemented a shopping cart system using the Pinia state management solution, and utilized v-model to achieve fuzzy filtering functionality.",
       logo: YearProgressLogo,
       link: {
         label: "getyearprogress.com",
@@ -212,7 +210,7 @@ export const RESUME_CN_DATA:ResumeData = {
       school: "中州科技大學",
       degree: "行銷與流通管理學系",
       start: "2012",
-      end: "2016",
+      end: "2017",
     },
   ],
   work: [
@@ -266,7 +264,7 @@ export const RESUME_CN_DATA:ResumeData = {
       title: "Blue Alert 藍色警戒",
       techStack: ["Side Project", "Vue3", "Sass", "Pinia","D3.js", "Chart.js", "Bootstrap5", "Git flow", "Fullcalendar", "GSAP", "PHP", "MySQL"],
       description:
-        "帶領六人團隊開發全端網頁應用程式，運用Vue3的Composition API進行前端開發，整合多元函式庫以提升使用者體驗，並以PHP、MySQL實作後端解決方案，同時串接外部API。",
+        "帶領七人團隊開發全端網頁應用程式，運用Vue3的Composition API進行前端開發，整合多元函式庫以提升使用者體驗，並以PHP、MySQL實作後端解決方案，同時串接外部API。",
       logo: ConsultlyLogo,
       link: {
         label: "BlueAlert",
@@ -277,11 +275,9 @@ export const RESUME_CN_DATA:ResumeData = {
       title: "寵物醫院商城",
       techStack: [
         "Side Project",
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
+        "JavaScript",
+        "CSS3",
+        "HTML",
       ],
       description: "運用原生JavaScript開發全方位的獸醫院網站，實作預約掛號和電子商務等進階功能，藉此強化核心JS技能，並展現DOM操作和LocalStorage應用的專業能力。",
       logo: ConsultlyLogo,
@@ -291,46 +287,46 @@ export const RESUME_CN_DATA:ResumeData = {
       },
     },
     {
-      title: "Todo List",
+      title: "代辦清單",
       techStack: ["Side Project", "Vue3", "TailwindCSS"],
       description:
         "運用Vue的v-model和計算屬性實現動態待辦事項列表，用以管理輸入/輸出並渲染列表項目。系統允許使用者點擊「移除」按鈕來刪除項目，該操作會從陣列中剔除對應的索引。當項目被勾選時，會通過JavaScript的sort()方法自動將其移至列表末尾。",
       logo: JarockiMeLogo,
       link: {
         label: "github.com",
-        href: "https://vercel.com/olevatorrs-projects/vue-project/todoList",
+        href: "https://vue-project-olevatorrs-projects.vercel.app/",
       },
     },
     {
-      title: "Weather API",
+      title: "天氣 API",
       techStack: ["Side Project", "Vue3", "D3.js", "topojson","TailwindCSS"],
       description:
-        "Minimalist calendars, habit trackers, and planners generator",
+        "透過串接氣象資料開放平台API並渲染天氣一週預報以及各資料處理，在使用topojson降低geojson檔案過大問題，並且在透過D3.js將台灣地圖選染並註冊click事件，以達到互動式天氣查詢。",
       logo: Minimal,
       link: {
         label: "github.com",
-        href: "https://vue-project-one-blond.vercel.app/WeatherApi",
+        href: "https://vue-project-olevatorrs-projects.vercel.app/",
       },
     },
     {
-      title: "Task Management System",
+      title: "任務管理系統",
       techStack: ["Side Project", "Vue3", "TailwindCSS"],
       description:
         "設計了一個任務管理系統，包含「待辦」、「進行中」和「已完成」三個區域，運用空陣列和HTML5 Drag API。任務可通過dataTransfer方法在區域間移動，實現對應陣列的推入或剔除操作。",
       logo: BarepapersLogo,
       link: {
         label: "barepapers.com",
-        href: "https://barepapers.com/",
+        href: "https://vue-project-olevatorrs-projects.vercel.app/",
       },
     },
     {
-      title: "Shopping Cart",
+      title: "購物車",
       techStack: ["Side Project", "Vue3", "TailwindCSS", "Pinia"],
-      description: "Tracks current year progress and displays a countdown",
+      description: "使用Pinia狀態管理系統來製作加入購物車系統，並且能透過v-model來實現模糊篩選。",
       logo: YearProgressLogo,
       link: {
         label: "getyearprogress.com",
-        href: "https://getyearprogress.com/",
+        href: "https://vue-project-olevatorrs-projects.vercel.app/",
       },
     },
   ],

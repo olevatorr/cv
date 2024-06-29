@@ -97,7 +97,7 @@ export default function ResumeContent() {
             </div>
 
             <Button onClick={toggleLanguage} className='print:hidden'>
-                Switch to {language === 'EN' ? 'Chinese' : 'English'}
+                {language === 'EN' ? '切換至繁體中文' : 'Switch to English'}
             </Button>
 
             <Section>
