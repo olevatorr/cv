@@ -24,7 +24,7 @@ export const RESUME_DATA:ResumeData = {
   avatarUrl: "https://avatars.githubusercontent.com/u/166091382?v=4",
   contact: {
     email: "otis0059@gmail.com",
-    tel: "+886928921465",
+    tel: "+886 928 921 465",
     social: [
       {
         name: "GitHub",
@@ -38,6 +38,7 @@ export const RESUME_DATA:ResumeData = {
       },
     ],
   },
+  bio: "",
   Hobbies: [
     "Photography",
     "Music",
@@ -50,6 +51,19 @@ export const RESUME_DATA:ResumeData = {
       degree: "Bachelor's Degree in Deliartment of Marketing and Logistics Management",
       start: "2012",
       end: "2017",
+    },
+  ],
+  advanced: [
+    {
+      company: "Tibame Vocational Training Center",
+      link: "https://www.tibame.com/",
+      badges: [null],
+      title: "Front-end Engineer Course",
+      logo: ConsultlyLogo,
+      start: "2024.3",
+      end: "2024.7",
+      description:
+        "Intensive front-end engineering program focusing on HTML, CSS3, HTML5, Vue3, PHP, and MySQL. Curriculum includes hands-on projects, culminating in both individual and team-based web applications. This in-person course provides comprehensive training in modern web development technologies and practical experience in collaborative software development.",
     },
   ],
   work: [
@@ -100,6 +114,7 @@ export const RESUME_DATA:ResumeData = {
   ],
   projects: [
     {
+      imageUrl: "https://i.ibb.co/jzcSLkP/Blue-Alert.png",
       title: "Blue Alert",
       techStack: ["Side Project", "Vue3", "Sass", "D3.js", "Chart.js", "Fullcalendar", "GSAP"],
       description:
@@ -111,6 +126,7 @@ export const RESUME_DATA:ResumeData = {
       },
     },
     {
+      imageUrl: "https://i.ibb.co/mFjJKN5/broods.png",
       title: "Pet Hospital Online Shop",
       techStack: [
         "Side Project",
@@ -126,6 +142,7 @@ export const RESUME_DATA:ResumeData = {
       },
     },
     {
+      imageUrl: "",
       title: "Todo List",
       techStack: ["Side Project", "Vue3", "TailwindCSS"],
       description:
@@ -137,6 +154,7 @@ export const RESUME_DATA:ResumeData = {
       },
     },
     {
+      imageUrl: "",
       title: "Weather API",
       techStack: ["Side Project", "Vue3", "D3.js", "topojson","TailwindCSS"],
       description:
@@ -148,6 +166,7 @@ export const RESUME_DATA:ResumeData = {
       },
     },
     {
+      imageUrl: "",
       title: "Task Management System",
       techStack: ["Side Project", "Vue3", "TailwindCSS"],
       description:
@@ -159,6 +178,7 @@ export const RESUME_DATA:ResumeData = {
       },
     },
     {
+      imageUrl: "",
       title: "Shopping Cart",
       techStack: ["Side Project", "Vue3", "TailwindCSS", "Pinia"],
       description: "Implemented a shopping cart system using the Pinia state management solution, and utilized v-model to achieve fuzzy filtering functionality.",
@@ -185,7 +205,7 @@ export const RESUME_CN_DATA:ResumeData = {
   avatarUrl: "https://avatars.githubusercontent.com/u/166091382?v=4",
   contact: {
     email: "otis0059@gmail.com",
-    tel: "+886928921465",
+    tel: "+886 928 921 465",
     social: [
       {
         name: "GitHub",
@@ -199,6 +219,7 @@ export const RESUME_CN_DATA:ResumeData = {
       },
     ],
   },
+  bio: "　　您好，我是陳昇志，目前居住於桃園中壢。目前已於2024年7月完成 Tibame 中壢職訓中心前端工程師培訓課程。作為一名轉職的前端工程師，我對網頁開發技術充滿熱情，持續學習 HTML5、CSS3、JavaScript 和 Vue3 等最新技術。我的求知慾驅使我不斷探索前端開發的各個領域，從響應式設計到性能優化，不斷擴展自己的專業知識。\n\n　　在 Tibame 的學習過程中，我展現了強烈的學習能力和積極的態度。我經常幫助其他同學解決課程中遇到的問題，這不僅鞏固了我自己的知識，也培養了我的溝通和教學能力。此外，我擔任了團隊專題的組長，負責制定專案日程表、跨團隊溝通協調、解決技術難題、分配工作並追蹤進度。這些經驗極大地提升了我的項目管理和領導能力。\n\n　　我善於運用邏輯思考來分析複雜問題，並設計出高效的前端解決方案。憑藉良好的時間管理能力，我能夠同時處理多個項目，並按時完成開發目標。\n\n　　在轉職前，我在全球知名科技公司 PNY Technologies Asia Pacific Limited 擔任業務專員，該公司是 NVIDIA 的 AIC 合作夥伴，專門生產高品質 PC 組件。在這個角色中，我展現了卓越的執行力和高效率。我負責維護客戶關係並開發新業務，這需要我具備出色的溝通技巧和洞察力。我精確管理業務計劃、預測控制、協商和報價流程，確保每個環節都準確無誤。此外，我全權負責管理多個線上商城（PChome/MOMO/蝦皮）並規劃促銷活動，這要求我具備優秀的時間管理能力和多任務處理能力。通過我的努力和策略，我成功使蝦皮商城銷售額從0達到每月兩百萬的規模，展現了我的高度責任心和出色的業績表現。我相信這些經驗和技能將有助於我在前端開發領域中快速成長和貢獻。\n\n　　上一份工作於華夏玻璃股份有限公司擔任國內外業務員，工作主要從業務開發、開發新產品、報價、訂單處理、生產排程、海運訂艙、內銷出貨安排、客訴處理及貨款等。在繁雜的工作日程中，我善用時間管理且有邏輯的規劃，讓每個客戶及公司有極高的評價，對於未知的領域也積極學習相關的知識，工作態度積極且認真負責。透過與客戶接洽的過程中，藉由學中做，做中學的精神，進而更加了解玻璃和模具等製作的專業知識。\n\n　　在課程之餘，我按照 Frontend Developer roadmap 來規劃學習路徑，系統性地擴展我的前端技能。這種有計劃的學習方式能夠穩紮穩打自己的硬實力，也能夠緊跟前端技術的最新發展趨勢。\n\n　　對於未來的職業發展規劃：\n1. 短期（一到三年），計劃穩固既有的前端基礎，並開始接觸和學習其他前端框架及相關知識。這將幫助我在實際項目中更加靈活地運用不同的技術解決方案。\n2. 中期（三到五年），目標是向後端和全端開發方向拓展。考慮到技術更新的快速步伐，仍會持續學習新興技術，確保自己在這個瞬息萬變的行業中保持競爭力。\n3. 長期來看，根據業界需求不斷調整自己的目標，持續精進技術實力。我相信，只有不斷學習和適應，才能在這個充滿機遇和挑戰的 IT 領域中實現長遠的職業發展。",
   Hobbies: [
     "攝影",
     "音樂",
@@ -213,7 +234,7 @@ export const RESUME_CN_DATA:ResumeData = {
       end: "2017",
     },
   ],
-  work: [
+  advanced: [
     {
       company: "Tibame緯育中壢職訓中心",
       link: "https://www.tibame.com/",
@@ -224,7 +245,9 @@ export const RESUME_CN_DATA:ResumeData = {
       end: "2024.7",
       description:
         "密集的前端工程培訓課程，專注於HTML、CSS3、HTML5、Vue3、PHP和MySQL。課程包含實作專案，最終完成個人和團隊網頁應用程式。這個實體課程提供現代網頁開發技術的全面培訓，並在協作軟體開發方面提供實務經驗。",
-    },
+    }
+  ],
+  work: [
     {
       company: "PNY Technologies Asia Pacific Limited 必恩威亞太有限公司",
       link: "https://www.pny.com.tw/tw/",
@@ -234,7 +257,7 @@ export const RESUME_CN_DATA:ResumeData = {
       start: "2021.10",
       end: "2024.2",
       description:
-        "透過有效的跨部門溝通和精準的時間管理，我持續達成銷售目標，同時優化客戶關係管理和線上商店營運，提升了分析能力和預測市場趨勢的效率。",
+        "NVIDIA的AIC合作夥伴，專門生產高品質PC組件。透過有效的跨部門溝通和精準的時間管理，持續達成銷售目標。 \n \n　　多平台運營 - 全權負責管理PChome、MOMO、蝦皮等多個線上商城 \n　　顯著業績提升 - 半年內將蝦皮商城月銷售額從0提升至200-300萬 \n　　業務流程優化 - 精確管理業務計劃、預測控制和報價流程 \n　　物流優化 - 與電商物流中心合作，建立SOP提高效率 \n　　客戶關係管理 - 運用出色的溝通技巧和洞察力開發新業務 \n　　促銷活動規劃 - 策劃並執行有效的促銷策略，提升銷售業績 \n　　市場分析 - 提升分析能力和預測市場趨勢的效率",
     },
     {
       company: "華夏玻璃股份有限公司",
@@ -245,7 +268,7 @@ export const RESUME_CN_DATA:ResumeData = {
       start: "2020.6",
       end: "2021.7",
       description:
-        "運用強大的溝通技巧和實施高效的時間管理策略，我超越銷售目標，同時細心管理訂單並分析客戶需求，這顯著提升了我的問題解決能力和整體工作效率。",
+        "台灣最大日用品玻璃廠。運用強大的溝通技巧和高效的時間管理策略，提升工作效率。 \n \n　　業務開發 - 積極開拓新客戶並發展新產品，擴大市場份額 \n　　訂單全程管理 - 從報價到出貨安排，確保流程順暢 \n　　危機談判 - 疫情期間成功協商漲價應對物價上漲，實現業績70%成長 \n　　持續學習 - 積極學習專業知識，提升跨部門合作能力 \n　　物流協調 - 負責海運訂艙和內銷出貨安排，優化配送效率 \n　　客戶服務 - 專業處理客訴及貨款事宜，維護良好客戶關係",
     },
   ],
   skills: [
@@ -261,10 +284,11 @@ export const RESUME_CN_DATA:ResumeData = {
   ],
   projects: [
     {
+      imageUrl: "https://i.ibb.co/jzcSLkP/Blue-Alert.png",
       title: "Blue Alert 藍色警戒",
       techStack: ["Side Project", "Vue3", "Sass", "Pinia","D3.js", "Chart.js", "Bootstrap5", "Git flow", "Fullcalendar", "GSAP", "PHP", "MySQL"],
       description:
-        "帶領七人團隊開發全端網頁應用程式，運用Vue3的Composition API進行前端開發，整合多元函式庫以提升使用者體驗，並以PHP、MySQL實作後端解決方案，同時串接外部API。",
+        `帶領七人團隊開發全端網頁應用程式，運用Vue3的script setup/Composition API/Options API進行前端開發，整合多元函式庫以提升使用者體驗，並以PHP、MySQL實作後端解決方案，同時串接外部API。 \n \n我負責的為\n前台: \n　　首頁切版/功能 - [ GSAP卷軸動畫、GSAP數字動畫、D3台灣地圖渲染、Chart.js圖表渲染、Vue3對比圖功能、Vue3問卷調查、GSAP輪播 ] \n　　客服機器人 - [ Vue3對話顯示、GSAP打字動畫 ] \n\n後台: \n　　Bootstrap5 切版(全後台)\n　　管理員系統 - [ Pinia狀態管理、cookies暫存 ] \n\nPHP - [ 新增/修改含圖片處理模板 ]\n\nMySQL - [ 資料庫所有Table邏輯串接以及資料搭建、效能優化 ]\n\n其他 - [ 制定專案日程表、跨團隊溝通協調、技術難題解決、工作分配與進度追蹤 ]`,
       logo: ConsultlyLogo,
       link: {
         label: "BlueAlert",
@@ -272,6 +296,7 @@ export const RESUME_CN_DATA:ResumeData = {
       },
     },
     {
+      imageUrl: "https://i.ibb.co/mFjJKN5/broods.png",
       title: "寵物醫院商城",
       techStack: [
         "Side Project",
@@ -279,7 +304,7 @@ export const RESUME_CN_DATA:ResumeData = {
         "CSS3",
         "HTML",
       ],
-      description: "運用原生JavaScript開發全方位的獸醫院網站，實作預約掛號和電子商務等進階功能，藉此強化核心JS技能，並展現DOM操作和LocalStorage應用的專業能力。",
+      description: "運用原生JavaScript開發全方位的獸醫院網站，實作預約掛號和電子商務等進階功能，藉此強化核心JS技能，並展現DOM操作和LocalStorage應用的專業能力。 \n \n我實現的功能包括\n前端效果: \n　　AOS動畫效果 - [ 使用原生JS實現Animate On Scroll效果 ] \n　　Google Maps整合 - [ 運用Google Maps API渲染每個醫院位置 ] \n\n會員系統: \n　　註冊/登入功能 - [ 使用LocalStorage實現資料儲存和驗證 ]\n\n電子商務: \n　　商品展示 - [ 使用陣列物件方式動態渲染商品卡片 ] \n　　購物車功能 - [ LocalStorage實現新增/修改購物車內容 ] \n　　折扣碼系統 - [ 實現折扣碼輸入和總金額動態計算 ] \n　　商品篩選 - [ 使用filter方法實現商品篩選功能 ]\n\n其他: \n　　原生JS技巧展示 - [ DOM操作、事件處理、非同步編程 ] \n　　效能優化 - [ 代碼重構、最佳實踐應用 ]",
       logo: ConsultlyLogo,
       link: {
         label: "Broods.com",
@@ -287,6 +312,7 @@ export const RESUME_CN_DATA:ResumeData = {
       },
     },
     {
+      imageUrl: "",
       title: "代辦清單",
       techStack: ["Side Project", "Vue3", "TailwindCSS"],
       description:
@@ -298,6 +324,7 @@ export const RESUME_CN_DATA:ResumeData = {
       },
     },
     {
+      imageUrl: "",
       title: "天氣 API",
       techStack: ["Side Project", "Vue3", "D3.js", "topojson","TailwindCSS"],
       description:
@@ -309,6 +336,7 @@ export const RESUME_CN_DATA:ResumeData = {
       },
     },
     {
+      imageUrl: "",
       title: "任務管理系統",
       techStack: ["Side Project", "Vue3", "TailwindCSS"],
       description:
@@ -320,6 +348,7 @@ export const RESUME_CN_DATA:ResumeData = {
       },
     },
     {
+      imageUrl: "",
       title: "購物車",
       techStack: ["Side Project", "Vue3", "TailwindCSS", "Pinia"],
       description: "使用Pinia狀態管理系統來製作加入購物車系統，並且能透過v-model來實現模糊篩選。",

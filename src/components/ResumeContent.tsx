@@ -15,8 +15,8 @@ import { ResumeData } from '@/data/type';
 
 
 export default function ResumeContent() {
-    const [currentData, setCurrentData] = useState<ResumeData>(RESUME_DATA);
-    const [language, setLanguage] = useState<'EN' | 'CN'>('EN');
+    const [currentData, setCurrentData] = useState<ResumeData>(RESUME_CN_DATA);
+    const [language, setLanguage] = useState<'EN' | 'CN'>('CN');
 
     const toggleLanguage = () => {
         if (language === 'EN') {
@@ -32,14 +32,14 @@ export default function ResumeContent() {
         <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-4">
             <div className="flex items-center justify-between">
                 <div className="flex-1 space-y-1.5">
-                    <h1 className="text-2xl font-bold">{currentData.name}</h1>
-                    <p className="max-w-md text-pretty font-mono text-sm text-muted-foreground print:text-[12px]">
+                    <h1 className="text-3xl font-bold">{currentData.name}</h1>
+                    <p className="max-w-md text-pretty font-mono text-md text-muted-foreground print:text-[14px]">
                         {currentData.about}
                     </p>
-                    <p className="max-w-md text-pretty font-mono font-bold italic text-sm text-muted-foreground print:text-[12px]">
+                    <p className="max-w-md text-pretty font-mono font-bold italic text-md text-muted-foreground print:text-[14px]">
                         {currentData.slogan}
                     </p>
-                    <p className="max-w-md items-center text-pretty font-mono text-xs text-muted-foreground">
+                    <p className="max-w-md items-center text-pretty font-mono text-md text-muted-foreground">
                         <a
                             className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
                             href={currentData.locationLink}
@@ -49,7 +49,7 @@ export default function ResumeContent() {
                             {currentData.location}
                         </a>
                     </p>
-                    <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground">
+                    <div className="flex gap-x-1 pt-1 font-mono text-md text-muted-foreground">
                         {currentData.contact.email ? (
                             <Button
                                 className="size-8"
@@ -62,6 +62,7 @@ export default function ResumeContent() {
                                 </a>
                             </Button>
                         ) : null}
+                        <p className='text-lg me-2'>{currentData.contact.email}</p>
                         {currentData.contact.tel ? (
                             <Button
                                 className="size-8"
@@ -74,10 +75,11 @@ export default function ResumeContent() {
                                 </a>
                             </Button>
                         ) : null}
+                        <p className='text-lg me-2'>{currentData.contact.tel}</p>
                         {currentData.contact.social.map((social) => (
                             <Button
                                 key={social.name}
-                                className="size-8"
+                                className="size-8 ms-2"
                                 variant="outline"
                                 size="icon"
                                 asChild
@@ -102,7 +104,7 @@ export default function ResumeContent() {
 
             <Section>
                 <h2 className="text-xl font-bold">About</h2>
-                <p className="text-pretty font-mono text-sm text-muted-foreground print:text-[12px]">
+                <p className="text-pretty font-mono text-md text-muted-foreground print:text-[14px]">
                     {currentData.summary}
                 </p>
             </Section>
@@ -132,7 +134,7 @@ export default function ResumeContent() {
                                         {work.badges.map((badge) => (
                                             <Badge
                                                 variant="secondary"
-                                                className="align-middle text-xs print:text-[8px] print:leading-tight print:px-1 print:py-0.5"
+                                                className="align-middle text-md print:text-[8px] print:leading-tight print:px-1 print:py-0.5"
                                                 key={badge}
                                             >
                                                 {badge}
@@ -140,15 +142,15 @@ export default function ResumeContent() {
                                         ))}
                                     </span>
                                 </h3>
-                                <div className="text-sm tabular-nums text-gray-500">
+                                <div className="text-md tabular-nums text-gray-500">
                                     {work.start} - {work.end ?? "Present"}
                                 </div>
                             </div>
-                            <h4 className="font-mono text-sm leading-none print:text-[12px]">
+                            <h4 className="font-mono text-md leading-none print:text-[14px]">
                                 {work.title}
                             </h4>
                         </CardHeader>
-                        <CardContent className="mt-2 text-xs print:text-[10px]">
+                        <CardContent className="mt-2 text-md print:text-[12px] whitespace-pre-line">
                             {work.description}
                         </CardContent>
                     </Card>
@@ -162,32 +164,58 @@ export default function ResumeContent() {
                         <CardHeader>
                             <div className="flex items-center justify-between gap-x-2 text-base">
                                 <h3 className="font-semibold leading-none">{education.school}</h3>
-                                <div className="text-sm tabular-nums text-gray-500">
+                                <div className="text-md tabular-nums text-gray-500">
                                     {education.start} - {education.end}
                                 </div>
                             </div>
                         </CardHeader>
-                        <CardContent className="mt-2 print:text-[12px]">
+                        <CardContent className="mt-2 print:text-[14px]">
                             {education.degree}
                         </CardContent>
                     </Card>
                 ))}
             </Section>
 
-            <Section>
-                <h2 className="text-xl font-bold">habbies</h2>
-                <div className="flex flex-wrap gap-1">
-                    {currentData.Hobbies.map((hobby) => (
-                        <Badge className="print:text-[10px]" key={hobby}>
-                            {hobby}
-                        </Badge>
-                    ))}
-                </div>
+            <Section className='pt-10'>
+                <h2 className="text-xl font-bold">Advanced Education</h2>
+                {currentData.advanced.map((advanced) => (
+                    <Card key={advanced.company}>
+                        <CardHeader>
+                            <div className="flex items-center justify-between gap-x-2 text-base">
+                                <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+                                    <a className="hover:underline" href={advanced.link}>
+                                        {advanced.company}
+                                    </a>
+                                    <span className="inline-flex gap-x-1">
+                                        {advanced.badges.map((badge) => (
+                                            <Badge
+                                                variant="secondary"
+                                                className="align-middle text-md print:text-[8px] print:leading-tight print:px-1 print:py-0.5"
+                                                key={badge}
+                                            >
+                                                {badge}
+                                            </Badge>
+                                        ))}
+                                    </span>
+                                </h3>
+                                <div className="text-md tabular-nums text-gray-500">
+                                    {advanced.start} - {advanced.end ?? "Present"}
+                                </div>
+                            </div>
+                            <h4 className="font-mono text-md leading-none print:text-[14px]">
+                                {advanced.title}
+                            </h4>
+                        </CardHeader>
+                        <CardContent className="mt-2 text-md print:text-[10px]">
+                            {advanced.description}
+                        </CardContent>
+                    </Card>
+                ))}
             </Section>
 
-            <Section className="scroll-mb-16 print-force-new-page">
+            <Section className="scroll-mb-16">
                 <h2 className="text-xl font-bold">Projects</h2>
-                <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
+                <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-2 print:gap-2 md:grid-cols-2 lg:grid-cols-2">
                     {currentData.projects.map((project) => (
                         <ProjectCard
                             key={project.title}
@@ -195,8 +223,16 @@ export default function ResumeContent() {
                             description={project.description}
                             tags={project.techStack}
                             link={"link" in project ? project.link.href : undefined}
+                            imageUrl={project.imageUrl}
                         />
                     ))}
+                </div>
+            </Section>
+
+            <Section className="print-force-new-page">
+                <h2 className="text-xl font-bold">Autobiography</h2>
+                <div className="whitespace-pre-line">
+                    {currentData.bio}
                 </div>
             </Section>
 

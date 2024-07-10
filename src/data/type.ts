@@ -16,6 +16,7 @@ export type ResumeData = {
             icon: React.ComponentType;
         }>;
     };
+    bio: string;
     Hobbies: string[];
     education: Array<{
         school: string;
@@ -33,8 +34,19 @@ export type ResumeData = {
         end: string;
         description: string;
     }>;
+    advanced: Array<{
+        company: string;
+        link: string;
+        badges: Array<string | null>;
+        title: string;
+        logo: React.ComponentType;
+        start: string;
+        end: string;
+        description: string;
+    }>;
     skills: string[];
     projects: Array<{
+        imageUrl: string;
         title: string;
         techStack: string[];
         description: string;
