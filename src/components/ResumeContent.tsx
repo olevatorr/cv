@@ -62,7 +62,7 @@ export default function ResumeContent() {
                                 </a>
                             </Button>
                         ) : null}
-                        <p className='text-lg me-2'>{currentData.contact.email}</p>
+                        <p className='text-md me-2'>{currentData.contact.email}</p>
                         {currentData.contact.tel ? (
                             <Button
                                 className="size-8"
@@ -75,7 +75,7 @@ export default function ResumeContent() {
                                 </a>
                             </Button>
                         ) : null}
-                        <p className='text-lg me-2'>{currentData.contact.tel}</p>
+                        <p className='text-md me-2'>{currentData.contact.tel}</p>
                         {currentData.contact.social.map((social) => (
                             <Button
                                 key={social.name}
@@ -176,7 +176,7 @@ export default function ResumeContent() {
                 ))}
             </Section>
 
-            <Section className='pt-10'>
+            <Section className='pt-2'>
                 <h2 className="text-xl font-bold">Advanced Education</h2>
                 {currentData.advanced.map((advanced) => (
                     <Card key={advanced.company}>
@@ -229,7 +229,7 @@ export default function ResumeContent() {
                 </div>
             </Section>
 
-            <Section className="print-force-new-page">
+            <Section className="">
                 <h2 className="text-xl font-bold">Autobiography</h2>
                 <div className="whitespace-pre-line">
                     {currentData.bio}
@@ -247,3 +247,5 @@ export default function ResumeContent() {
         </section>
     );
 }
+
+// print-force-new-page
