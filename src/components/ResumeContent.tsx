@@ -29,7 +29,7 @@ export default function ResumeContent() {
     };
 
     return (
-        <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-4">
+        <section className="mx-auto w-full space-y-8 bg-white print:space-y-4">
             <div className="flex items-center justify-between">
                 <div className="flex-1 space-y-1.5">
                     <h1 className="text-3xl font-bold">{currentData.name}</h1>
@@ -49,7 +49,7 @@ export default function ResumeContent() {
                             {currentData.location}
                         </a>
                     </p>
-                    <div className="flex gap-x-1 pt-1 font-mono text-md text-muted-foreground">
+                    <div className="flex gap-x-2 pt-1 flex-wrap items-center font-mono text-md text-muted-foreground">
                         {currentData.contact.email ? (
                             <Button
                                 className="size-8"
@@ -92,7 +92,7 @@ export default function ResumeContent() {
                     </div>
                 </div>
 
-                <Avatar className="size-28">
+                <Avatar className="size-40">
                     <AvatarImage alt={currentData.name} src={currentData.avatarUrl} />
                     <AvatarFallback>{currentData.initials}</AvatarFallback>
                 </Avatar>
@@ -150,7 +150,7 @@ export default function ResumeContent() {
                                 {work.title}
                             </h4>
                         </CardHeader>
-                        <CardContent className="mt-2 text-md print:text-[12px] whitespace-pre-line">
+                        <CardContent className="mt-2 pb-5 text-md print:text-[12px] border-b whitespace-pre-line">
                             {work.description}
                         </CardContent>
                     </Card>

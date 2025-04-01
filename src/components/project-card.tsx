@@ -20,8 +20,8 @@ export function ProjectCard({ title, description, tags, link, imageUrl }: Props)
   return (
     <Card className="flex flex-col overflow-hidden border border-muted">
       {imageUrl && (
-        <div className="h-48 w-full overflow-hidden">
-          <img src={imageUrl} alt={title} className="h-full" />
+        <div className="w-full aspect-[10/5.25] overflow-hidden">
+          <img src={imageUrl} alt={title} className="size-full object-cover" />
         </div>
       )}
       <CardHeader className="p-4">
