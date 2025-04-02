@@ -31,7 +31,7 @@ export type ResumeData = {
         title: string;
         logo: React.ComponentType;
         start: string;
-        end: string;
+        end: string | null;
         description: string;
     }>;
     advanced: Array<{
