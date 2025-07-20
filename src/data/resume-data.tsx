@@ -16,8 +16,8 @@ export const RESUME_DATA:ResumeData = {
   initials: "OC",
   location: "Zhongli, Taoyuan, Taiwan",
   locationLink: "https://maps.app.goo.gl/AMvSWuNNUMALzuNM8",
-  about: "Frontend Developer focused on logical problem-solving and continuous learning of new technologies",
-  summary: "Specializing in Nuxt 3 and Tailwind CSS development for high-performance interactive websites. Proficient in pixel-perfect UI implementation and animation effects using GSAP, Three.js, and p5.js. Independently developed multiple medium to large-scale websites, responsible for frontend architecture design, WordPress CMS setup, RESTful API integration, and SEO optimization. Participated in over 5 medium to large-scale dynamic website team collaborations, specializing in modular architecture planning and visual interaction effects implementation. Emphasizes performance optimization and team collaboration, skilled in writing API documentation to improve development efficiency.",
+  about: "Frontend Developer",
+  summary: "Specializing in Nuxt 3, Next.js and Tailwind CSS development for high-performance interactive websites. Proficient in pixel-perfect UI implementation and animation effects using GSAP, Three.js, and p5.js. Independently developed multiple medium to large-scale websites, responsible for frontend architecture design, WordPress CMS setup, RESTful API integration, and SEO optimization. Participated in over 5 medium to large-scale dynamic website team collaborations, specializing in modular architecture planning and visual interaction effects implementation. Emphasizes performance optimization and team collaboration, skilled in writing API documentation to improve development efficiency.",
   avatarUrl: "https://avatars.githubusercontent.com/u/166091382?v=4",
   contact: {
     email: "otis0059@gmail.com",
@@ -65,63 +65,116 @@ export const RESUME_DATA:ResumeData = {
   ],
   work: [
     {
+      company: "YS-Inforware",
+      link: "",
+      badges: ["Nuxt3", "Vue3", "TailwindCSS", "PrimeVue", "docker", "gitlab"],
+      title: "Frontend Engineer",
+      logo: ConsultlyLogo,
+      start: "2025.5",
+      end: "Present",
+      description:
+        "Enterprise data management and workflow management system, reconstructed with Nuxt3 framework to achieve multi-API and responsive data processing for SSR and CSR. \n• Package Integration - Introduced PrimeVue to implement enterprise-level UI design, solving performance pain points caused by traditional UI compatibility issues with Vue3 \n• Architecture Reconstruction - Rebuilt core project functionality, breaking away from past limitations of poor performance, UI/UX, and scalability \n• Unified Style - Standardized team development style to improve development efficiency and quality \n• User Experience - Simplified user operation workflow to enhance user experience \n• Framework - Used Nuxt3 framework to reconstruct enterprise data management and workflow management systems, achieving multi-API and responsive data processing for SSR and CSR \n• Team Collaboration - Collaborated with frontend and backend engineers to implement various functions with new architecture",
+    },
+    {
       company: "Block Studio",
       link: "https://blockstudio.tw/",
       badges: ["Nuxt3", "Vue3", "TailwindCSS", "PHP", "MySQL", "Docker", "Nginx", "Gitlab", "WordPress"],
       title: "Frontend Engineer",
       logo: ConsultlyLogo,
       start: "2024.8",
-      end: "Present",
+      end: "2025.4",
       description:
-        "Independent operation with extensive project experience, proficient in WordPress, PHP, Docker, Nginx, Gitlab, and other technologies. \n\n• Independent Work - Completed one medium-sized official website, currently working on one large project and one dynamic landing page \n• Team Collaboration - More than five collaborative projects, adhering to consistent team coding style \n• Project Management - Time allocation for multiple concurrent projects \n• Performance Optimization - Optimizing website loading speed and user experience \n• SEO Optimization - Implementing search engine optimization strategies to improve website rankings and visibility \n• Problem-Solving - Systematically analyzing and resolving complex technical challenges to ensure project success",
+        "Independent operation with extensive project experience, proficient in WordPress, PHP, Docker, Nginx, Gitlab, and other technologies. \n• Independent Work - Completed one medium-sized official website, currently working on one large project and one dynamic landing page \n• Team Collaboration - More than five collaborative projects, adhering to consistent team coding style \n• Project Management - Time allocation for multiple concurrent projects \n• Performance Optimization - Optimizing website loading speed and user experience \n• SEO Optimization - Implementing search engine optimization strategies to improve website rankings and visibility \n• Problem-Solving - Systematically analyzing and resolving complex technical challenges to ensure project success",
     },
     {
       company: "PNY Technologies Asia Pacific Limited",
       link: "https://www.pny.com.tw/tw/",
-      badges: [null],
+      badges: [],
       title: "Business Specialist",
       logo: ConsultlyLogo,
       start: "2021.10",
       end: "2024.2",
       description:
-        "NVIDIA AIC partner specializing in high-quality PC components. Consistently achieved sales targets through effective cross-departmental communication and precise time management. \n\n• Multi-platform Operations - Full responsibility for managing PChome, MOMO, Shopee, and other online marketplaces \n• Significant Performance Improvement - Increased Shopee monthly sales from 0 to 2-3 million NTD within six months \n• Business Process Optimization - Precise management of business planning, forecast control, and quotation processes \n• Logistics Optimization - Collaborated with e-commerce logistics centers to establish SOPs for improved efficiency \n• Customer Relationship Management - Developed new business using excellent communication skills and insights \n• Promotional Campaign Planning - Planned and executed effective promotional strategies to boost sales \n• Market Analysis - Enhanced analytical abilities and efficiency in forecasting market trends",
+        "NVIDIA AIC partner specializing in high-quality PC components. Consistently achieved sales targets through effective cross-departmental communication and precise time management. \n• Multi-platform Operations - Full responsibility for managing PChome, MOMO, Shopee, and other online marketplaces \n• Significant Performance Improvement - Increased Shopee monthly sales from 0 to 2-3 million NTD within six months \n• Business Process Optimization - Precise management of business planning, forecast control, and quotation processes \n• Logistics Optimization - Collaborated with e-commerce logistics centers to establish SOPs for improved efficiency \n• Customer Relationship Management - Developed new business using excellent communication skills and insights \n• Promotional Campaign Planning - Planned and executed effective promotional strategies to boost sales \n• Market Analysis - Enhanced analytical abilities and efficiency in forecasting market trends",
     },
     {
       company: "Hua Hsia Glass Co., Ltd.",
       link: "https://www.hwahsiaglass.com/tw",
-      badges: [null],
+      badges: [],
       title: "International Sales Representative",
       logo: ParabolLogo,
       start: "2020.6",
       end: "2021.7",
       description:
-        "Taiwan's largest daily-use glassware manufacturer. Improved work efficiency through strong communication skills and effective time management strategies. \n\n• Business Development - Actively developed new customers and products to expand market share \n• Order Management - Ensured smooth process from quotation to shipping arrangements \n• Crisis Negotiation - Successfully negotiated price increases during the pandemic, achieving 70% growth \n• Continuous Learning - Actively learned professional knowledge, improved cross-departmental collaboration \n• Logistics Coordination - Responsible for sea freight booking and domestic shipping arrangements \n• Customer Service - Professional handling of customer complaints and payment matters",
+        "Taiwan's largest daily-use glassware manufacturer. Improved work efficiency through strong communication skills and effective time management strategies. \n• Business Development - Actively developed new customers and products to expand market share \n• Order Management - Ensured smooth process from quotation to shipping arrangements \n• Crisis Negotiation - Successfully negotiated price increases during the pandemic, achieving 70% growth \n• Continuous Learning - Actively learned professional knowledge, improved cross-departmental collaboration \n• Logistics Coordination - Responsible for sea freight booking and domestic shipping arrangements \n• Customer Service - Professional handling of customer complaints and payment matters",
     },
   ],
   skills: [
-    "Nuxt3",
+    "Nuxt.js",
     "Next.js",
-    "Docker",
-    "Vue3",
-    "TailwindCSS v3",
-    "TailwindCSS v4",
+    "Vue.js",
+    "React.js",
+    "TailwindCSS v3/v4",
+    "HTML",
+    "CSS",
     "JavaScript",
+    "docker",
     "Sass",
+    "Node.js",
+    "Express.js",
     "Git",
     "GitLab",
+    "swagger",
+    "Figma",
     "PHP",
     "MySQL",
     "jQuery",
-    "HTML5",
-    "Node.js",
+    "Java",
+    "Python"
   ],
   projects: [
     {
-      imageUrl: "https://i.ibb.co/cX6LQVgX/og-img.jpg",
-      title: "Unme Design",
-      techStack: ["Nuxt3", "Vue3", "TailwindCSS", "GSAP", "Swiper", "WordPress(CMS)","PHP", "MariaDB", "Docker", "Nginx", "Gitlab"],
+      imageUrl: "/projects/art-bank.webp",
+      title: "Taiwan Art Bank Official Website",
+      techStack: ["Nuxt3", "Vue3", "TailwindCSS", "GSAP", "swiper", "wordpress(CMS)","PHP", "MariaDB", "Docker", "Nginx", "Gitlab"],
       description:
-        "This project is a corporate website that I developed independently from start to finish, using WordPress as the CMS system and Nuxt3 framework with various dynamic technologies. \n\nMy work includes: \n• Visual Dynamic Effects - Implemented scroll-triggered animations, element transitions, and interactive experiences using GSAP \n• 3D Interactive Elements - Integrated Spline technology to create immersive 3D product displays and interactive scenes \n• Responsive Design - Ensured optimal visual presentation and user experience across all devices \n• CMS Integration - Established seamless connection between WordPress and Nuxt3 for efficient content management \n• Performance Optimization - Optimized loading for numerous dynamic elements to ensure smooth user experience \n• Site-wide SEO - Implemented comprehensive search engine optimization strategies to enhance brand online visibility",
+        "Frontend Collaboration | Large-scale Website Rebuild | SEO Optimization",
+      logo: ConsultlyLogo,
+      link: {
+        label: "Taiwan Art Bank",
+        href: "https://artbank.tfaf.org.tw/",
+      },
+    },
+    {
+      imageUrl: "/projects/china-air.webp",
+      title: "China Airlines Member Day",
+      techStack: ["Nuxt3", "Vue3", "TailwindCSS", "GSAP", "swiper",  "Docker", "Gitlab"],
+      description:
+        "Independent Frontend Development | Event Page | SEO Optimization | Multilingual",
+      logo: ConsultlyLogo,
+      link: {
+        label: "China Airlines Member Day",
+        href: "https://members-event.china-airlines.com/promotion",
+      },
+    },
+    {
+      imageUrl: "/projects/fenc.webp",
+      title: "Far Eastern New Century Official Website",
+      techStack: ["Nuxt3", "Vue3", "TailwindCSS", "GSAP", "swiper", "Spline", "Docker", "Gitlab"],
+      description:
+        "Independent Frontend Development | Large-scale Website Rebuild | SEO Optimization | Multilingual",
+      logo: ConsultlyLogo,
+      link: {
+        label: "Far Eastern New Century",
+        href: "https://www.fenc.com.tw/",
+      },
+    },
+    {
+      imageUrl: "/projects/unme.webp",
+      title: "Unme Design Official Website",
+      techStack: ["Nuxt3", "Vue3", "TailwindCSS", "GSAP", "swiper", "wordpress(CMS)","PHP", "MariaDB", "Docker", "Nginx", "Gitlab"],
+      description:
+        "Full-stack Independent Development | Medium-scale Website Rebuild | SEO Optimization",
       logo: ConsultlyLogo,
       link: {
         label: "Unme Design",
@@ -129,11 +182,11 @@ export const RESUME_DATA:ResumeData = {
       },
     },
     {
-      imageUrl: "https://i.ibb.co/2GxwB41/2025-04-01-11-21-39.png",
+      imageUrl: "/projects/chenbro.webp",
       title: "CHENBRO Official Website",
-      techStack: ["Nuxt3", "Vue3", "TailwindCSS", "GSAP", "Swiper","Docker", "Nginx", "Gitlab"],
+      techStack: ["Nuxt3", "Vue3", "TailwindCSS", "GSAP", "swiper","Docker", "Nginx", "Gitlab"],
       description:
-        "Participated in developing a large-scale corporate website project, primarily responsible for the frontend development of three core sections: Products, Partners, and Service & Support, and involved in comprehensive debugging and optimization during the project's final phase. \n\nMy contributions include: \n• Products (/product) - Developed complex product categorization and filtering functionality for intuitive browsing experience \n• Partner Platform (/partners) - Built interactive partner map and query system, optimizing partner search process \n• Service & Support Center (/support) - Implemented multi-level technical support system, integrating download center and FAQ functionality \n• Cross-browser Compatibility - Ensured all features work properly across major browsers \n• Project Completion - Systematic debugging and performance optimization for stable operation and successful project closure",
+        "Frontend Collaboration | Large-scale Website Rebuild | Multilingual",
       logo: ConsultlyLogo,
       link: {
         label: "CHENBRO",
@@ -141,11 +194,11 @@ export const RESUME_DATA:ResumeData = {
       },
     },
     {
-      imageUrl: "https://i.ibb.co/WNDVzH07/og-img.jpg",
+      imageUrl: "/projects/venti.webp",
       title: "VentiVenti Consulting Official Website",
-      techStack: ["Nuxt3", "Vue3", "TailwindCSS", "GSAP", "WordPress(CMS)", "PHP", "MariaDB", "Docker", "Nginx", "Gitlab"],
+      techStack: ["Nuxt3", "Vue3", "TailwindCSS", "GSAP", "wordpress(CMS)", "PHP", "MariaDB", "Docker", "Nginx", "Gitlab"],
       description:
-        "Focused on comprehensive website SEO optimization to enhance search engine visibility and rankings. Implemented systematic technical solutions to significantly improve website performance in search results. \n\nMy contributions include: \n• SEO Technical Optimization - Implemented robots.txt and sitemap configuration for proper search engine indexing \n• Structured Data - Integrated JSON-LD markup to enhance Local Business information presentation in search results \n• Multi-language SEO - Implemented hreflang tags to optimize multi-language content recognition \n• HTML Semantics - Optimized site-wide HTML tags to improve content readability and search engine understanding \n• Technical SEO - Improved website loading speed, mobile device compatibility, and other technical factors to enhance overall SEO performance",
+        "Frontend Collaboration | Medium-scale Website Rebuild | SEO Optimization | Multilingual",
       logo: ConsultlyLogo,
       link: {
         label: "VentiVenti Consulting",
@@ -153,11 +206,11 @@ export const RESUME_DATA:ResumeData = {
       },
     },
     {
-      imageUrl: "https://i.ibb.co/JWX0GtSc/2025-04-01-11-25-56.png",
+      imageUrl: "/projects/cmp.webp",
       title: "CMP Inspiration Official Website",
-      techStack: ["Nuxt3", "Vue3", "TailwindCSS", "GSAP", "WordPress(CMS)", "PHP", "MariaDB", "Docker", "Nginx", "Gitlab"],
+      techStack: ["Nuxt3", "Vue3", "TailwindCSS", "GSAP", "wordpress(CMS)", "PHP", "MariaDB", "Docker", "Nginx", "Gitlab"],
       description:
-        "Participated in late-stage development and optimization, focusing on system stability enhancement and functionality refinement. Primary responsibilities included critical issue resolution, performance optimization, and user experience improvements. \n\nMy contributions include: \n• System Debugging - Identified and resolved complex frontend interaction issues and data presentation errors \n• Cross-browser Compatibility - Ensured consistent website presentation and functionality across major browsers \n• WordPress Integration - Optimized CMS and frontend framework connection for smooth data transmission \n• Code Refactoring - Improved existing code structure for better maintainability and scalability",
+        "Full-stack Collaboration | Medium-scale Website Rebuild | SEO Optimization | Multilingual",
       logo: ConsultlyLogo,
       link: {
         label: "CMP Inspiration",
@@ -165,11 +218,11 @@ export const RESUME_DATA:ResumeData = {
       },
     },
     {
-      imageUrl: "https://i.ibb.co/jzcSLkP/Blue-Alert.png",
+      imageUrl: "/projects/Blue-Alert.webp",
       title: "Blue Alert",
-      techStack: ["Side Project", "Vue3", "Sass", "Pinia", "D3.js", "Chart.js", "Bootstrap5", "Git flow", "Fullcalendar", "GSAP", "PHP", "MySQL"],
+      techStack: ["Side Project", "Vue3", "Sass", "Pinia","D3.js", "Chart.js", "Bootstrap5", "Git flow", "Fullcalendar", "GSAP", "PHP", "MySQL"],
       description:
-        "Led a seven-person team in developing a full-stack web application, utilizing Vue3's script setup/Composition API/Options API for frontend development, integrating diverse libraries for enhanced user experience, and implementing backend solutions with PHP, MySQL, and external API integrations. \n\nMy responsibilities included:\nFrontend: \n• Homepage Layout/Functionality - [GSAP scroll animations, GSAP number animations, D3 Taiwan map rendering, Chart.js chart rendering, Vue3 comparison feature, Vue3 survey, GSAP carousel] \n• Customer Service Bot - [Vue3 dialogue display, GSAP typing animation] \n\nBackend: \n• Bootstrap5 Layout (entire backend) \n• Admin System - [Pinia state management, cookies storage] \n\nPHP - [Add/modify template with image processing] \n\nMySQL - [Database table logic integration and data structure, performance optimization] \n\nOthers - [Project schedule creation, team communication coordination, technical problem solving, work distribution and progress tracking]",
+        "Full-stack Collaboration | Team Leadership | Agile Development",
       logo: ConsultlyLogo,
       link: {
         label: "BlueAlert",
@@ -177,7 +230,7 @@ export const RESUME_DATA:ResumeData = {
       },
     },
     {
-      imageUrl: "https://i.ibb.co/mFjJKN5/broods.png",
+      imageUrl: "/projects/broods.webp",
       title: "Pet Hospital Online Shop",
       techStack: [
         "Side Project",
@@ -185,58 +238,11 @@ export const RESUME_DATA:ResumeData = {
         "CSS3",
         "HTML",
       ],
-      description: "Developed a comprehensive veterinary hospital website using vanilla JavaScript, implementing advanced features like appointment booking and e-commerce functionality. \n\nMy implemented features include:\nFrontend Effects: \n• AOS Animation - [Implemented Animate On Scroll effects using native JS] \n• Google Maps Integration - [Rendered each hospital location using Google Maps API] \n\nMembership System: \n• Registration/Login - [Implemented data storage and validation using LocalStorage] \n\nE-commerce: \n• Product Display - [Dynamically rendered product cards using array objects] \n• Shopping Cart - [Implemented add/modify cart content using LocalStorage] \n• Discount Code System - [Implemented discount code input and dynamic total calculation] \n• Product Filtering - [Implemented product filtering using filter method] \n\nOthers: \n• Native JS Skills Showcase - [DOM manipulation, event handling, asynchronous programming] \n• Performance Optimization - [Code refactoring, best practices application]",
+      description: "Independent Frontend Development | Native JavaScript | Google Maps API",
       logo: ConsultlyLogo,
       link: {
         label: "Broods.com",
         href: "https://personal-project-iota.vercel.app/",
-      },
-    },
-    {
-      imageUrl: "",
-      title: "Todo List",
-      techStack: ["Side Project", "Vue3", "TailwindCSS"],
-      description:
-        "Implemented a dynamic todo list using Vue's v-model and computed properties to manage input/output and render list items. The system allows users to remove items by clicking a \"remove\" button, which splices the corresponding index from the array. When an item is checked, it's automatically moved to the end of the list using JavaScript's sort() method.",
-      logo: JarockiMeLogo,
-      link: {
-        label: "github.com",
-        href: "https://vue-project-olevatorrs-projects.vercel.app/",
-      },
-    },
-    {
-      imageUrl: "",
-      title: "Weather API",
-      techStack: ["Side Project", "Vue3", "D3.js", "topojson","TailwindCSS"],
-      description:
-        "Implemented a weather forecast application by integrating the open weather data platform API to render a week-long weather forecast and process various data. Utilized topojson to address the issue of oversized geojson files. Rendered an interactive map of Taiwan using D3.js and registered click events, achieving an interactive weather query system.",
-      logo: Minimal,
-      link: {
-        label: "github.com",
-        href: "https://vue-project-olevatorrs-projects.vercel.app/",
-      },
-    },
-    {
-      imageUrl: "",
-      title: "Task Management System",
-      techStack: ["Side Project", "Vue3", "TailwindCSS"],
-      description:
-        "Designed a task management system with \"Todo\", \"Processing\", and \"Done\" zones, utilizing empty arrays and the HTML5 Drag and Drop API. Tasks can be moved between zones using dataTransfer methods to push or splice items from the respective arrays.",
-      logo: BarepapersLogo,
-      link: {
-        label: "github.com",
-        href: "https://vue-project-olevatorrs-projects.vercel.app/",
-      },
-    },
-    {
-      imageUrl: "",
-      title: "Shopping Cart",
-      techStack: ["Side Project", "Vue3", "TailwindCSS", "Pinia"],
-      description: "Implemented a shopping cart system using the Pinia state management solution, and utilized v-model to achieve fuzzy filtering functionality.",
-      logo: YearProgressLogo,
-      link: {
-        label: "github.com",
-        href: "https://vue-project-olevatorrs-projects.vercel.app/",
       },
     },
   ],
@@ -312,7 +318,7 @@ export const RESUME_CN_DATA:ResumeData = {
       start: "2025.5",
       end: null,
       description:
-        "企業級資料管理以及流程管理系統，使用Nuxt3框架重構開發，達到多API以及資料響應式處理的SSR、CSR。\n\n 　　套件導入 - 導入PrimeVue實現企業級UI設計，以解決傳統UI和與Vue3的相容性問題導致的效能痛點\n　　架構重建- 重構專案核心功能，跳脫過往效能、UI/UX以及擴展性極差的缺點\n　　統一風格 - 一致化團隊開發風格，提升開發效率和品質\n　　使用者體驗 - 簡化使用者操作流程，提升使用者體驗\n　　框架 - 使用Nuxt3框架重構開發企業級資料管理以及流程管理系統，達到多API以及資料響應式處理的SSR、CSR\n　　團隊協作 - 與前後端工程師協作討論，以新架構實現多種功能",
+        "企業級資料管理以及流程管理系統，使用Nuxt3框架重構開發，達到多API以及資料響應式處理的SSR、CSR。\n 　　套件導入 - 導入PrimeVue實現企業級UI設計，以解決傳統UI和與Vue3的相容性問題導致的效能痛點\n　　架構重建- 重構專案核心功能，跳脫過往效能、UI/UX以及擴展性極差的缺點\n　　統一風格 - 一致化團隊開發風格，提升開發效率和品質\n　　使用者體驗 - 簡化使用者操作流程，提升使用者體驗\n　　框架 - 使用Nuxt3框架重構開發企業級資料管理以及流程管理系統，達到多API以及資料響應式處理的SSR、CSR\n　　團隊協作 - 與前後端工程師協作討論，以新架構實現多種功能",
     },
     {
       company: "版塊創意有限公司 BlockStudio",
@@ -323,7 +329,7 @@ export const RESUME_CN_DATA:ResumeData = {
       start: "2024.8",
       end: "2025.4",
       description:
-        "可獨立作業且擁有豐富的專案經驗，熟悉WordPress、PHP、Docker、Nginx、Gitlab等技術。 \n \n　　獨立作業 - 目前完成一個中型官網，進行中有一個大型專案和一個豐富動態的Landing page \n　　團隊協作 - 五個以上的協作專案，符合一致的團隊coding style \n　　專案管理 - 多項專案同時進行時間分配 \n　　效能優化 - 針對網站載入速度和使用者體驗進行優化 \n　　SEO優化 - 實施搜尋引擎優化策略，提升網站在搜尋結果中的排名和可見度 \n　　問題解決能力 - 系統性分析並解決複雜的技術挑戰，確保專案順利進行",
+        "可獨立作業且擁有豐富的專案經驗，熟悉WordPress、PHP、Docker、Nginx、Gitlab等技術。\n　　獨立作業 - 目前完成一個中型官網，進行中有一個大型專案和一個豐富動態的Landing page \n　　團隊協作 - 五個以上的協作專案，符合一致的團隊coding style \n　　專案管理 - 多項專案同時進行時間分配 \n　　效能優化 - 針對網站載入速度和使用者體驗進行優化 \n　　SEO優化 - 實施搜尋引擎優化策略，提升網站在搜尋結果中的排名和可見度 \n　　問題解決能力 - 系統性分析並解決複雜的技術挑戰，確保專案順利進行",
     },
     {
       company: "美商必恩威亞太有限公司 PNY Technologies Asia Pacific Limited",
@@ -334,7 +340,7 @@ export const RESUME_CN_DATA:ResumeData = {
       start: "2021.10",
       end: "2024.2",
       description:
-        "NVIDIA的AIC合作夥伴，專門生產高品質PC組件。透過有效的跨部門溝通和精準的時間管理，持續達成銷售目標。 \n \n　　多平台運營 - 全權負責管理PChome、MOMO、蝦皮等多個線上商城 \n　　顯著業績提升 - 半年內將蝦皮商城月銷售額從0提升至200-300萬 \n　　業務流程優化 - 精確管理業務計劃、預測控制和報價流程 \n　　物流優化 - 與電商物流中心合作，建立SOP提高效率 \n　　客戶關係管理 - 運用出色的溝通技巧和洞察力開發新業務 \n　　促銷活動規劃 - 策劃並執行有效的促銷策略，提升銷售業績 \n　　市場分析 - 提升分析能力和預測市場趨勢的效率",
+        "NVIDIA的AIC合作夥伴，專門生產高品質PC組件。透過有效的跨部門溝通和精準的時間管理，持續達成銷售目標。 \n　　多平台運營 - 全權負責管理PChome、MOMO、蝦皮等多個線上商城 \n　　顯著業績提升 - 半年內將蝦皮商城月銷售額從0提升至200-300萬 \n　　業務流程優化 - 精確管理業務計劃、預測控制和報價流程 \n　　物流優化 - 與電商物流中心合作，建立SOP提高效率 \n　　客戶關係管理 - 運用出色的溝通技巧和洞察力開發新業務 \n　　促銷活動規劃 - 策劃並執行有效的促銷策略，提升銷售業績 \n　　市場分析 - 提升分析能力和預測市場趨勢的效率",
     },
     {
       company: "華夏玻璃股份有限公司",
@@ -345,7 +351,7 @@ export const RESUME_CN_DATA:ResumeData = {
       start: "2020.6",
       end: "2021.7",
       description:
-        "台灣最大日用品玻璃廠。運用強大的溝通技巧和高效的時間管理策略，提升工作效率。 \n \n　　業務開發 - 積極開拓新客戶並發展新產品，擴大市場份額 \n　　訂單全程管理 - 從報價到出貨安排，確保流程順暢 \n　　危機談判 - 疫情期間成功協商漲價應對物價上漲，實現業績70%成長 \n　　持續學習 - 積極學習專業知識，提升跨部門合作能力 \n　　物流協調 - 負責海運訂艙和內銷出貨安排，優化配送效率 \n　　客戶服務 - 專業處理客訴及貨款事宜，維護良好客戶關係",
+        "台灣最大日用品玻璃廠。運用強大的溝通技巧和高效的時間管理策略，提升工作效率。 \n　　業務開發 - 積極開拓新客戶並發展新產品，擴大市場份額 \n　　訂單全程管理 - 從報價到出貨安排，確保流程順暢 \n　　危機談判 - 疫情期間成功協商漲價應對物價上漲，實現業績70%成長 \n　　持續學習 - 積極學習專業知識，提升跨部門合作能力 \n　　物流協調 - 負責海運訂艙和內銷出貨安排，優化配送效率 \n　　客戶服務 - 專業處理客訴及貨款事宜，維護良好客戶關係",
     },
   ],
   skills: [
@@ -373,7 +379,43 @@ export const RESUME_CN_DATA:ResumeData = {
   ],
   projects: [
     {
-      imageUrl: "https://i.ibb.co/cX6LQVgX/og-img.jpg",
+      imageUrl: "/projects/art-bank.webp",
+      title: "藝術銀行 官方網站",
+      techStack: ["Nuxt3", "Vue3", "TailwindCSS", "GSAP", "swiper", "wordpress(CMS)","PHP", "MariaDB", "Docker", "Nginx", "Gitlab"],
+      description:
+        "前後端協作 | 大型官網重建 | SEO優化",
+      logo: ConsultlyLogo,
+      link: {
+        label: "藝術銀行",
+        href: "https://artbank.tfaf.org.tw/",
+      },
+    },
+    {
+      imageUrl: "/projects/china-air.webp",
+      title: "中華航空 會員日",
+      techStack: ["Nuxt3", "Vue3", "TailwindCSS", "GSAP", "swiper",  "Docker", "Gitlab"],
+      description:
+        "前端獨立開發 | 活動頁面 | SEO優化 | 多國語系",
+      logo: ConsultlyLogo,
+      link: {
+        label: "中華航空 會員日",
+        href: "https://members-event.china-airlines.com/promotion",
+      },
+    },
+    {
+      imageUrl: "/projects/fenc.webp",
+      title: "遠東新世紀 官方網站",
+      techStack: ["Nuxt3", "Vue3", "TailwindCSS", "GSAP", "swiper", "Spline", "Docker", "Gitlab"],
+      description:
+        "前端獨立開發 | 大型官網重建 | SEO優化 | 多國語系",
+      logo: ConsultlyLogo,
+      link: {
+        label: "遠東新世紀",
+        href: "https://www.fenc.com.tw/",
+      },
+    },
+    {
+      imageUrl: "/projects/unme.webp",
       title: "非我設計 Unme Design 官方網站",
       techStack: ["Nuxt3", "Vue3", "TailwindCSS", "GSAP", "swiper", "wordpress(CMS)","PHP", "MariaDB", "Docker", "Nginx", "Gitlab"],
       description:
@@ -385,11 +427,11 @@ export const RESUME_CN_DATA:ResumeData = {
       },
     },
     {
-      imageUrl: "https://i.ibb.co/2GxwB41/2025-04-01-11-21-39.png",
+      imageUrl: "/projects/chenbro.webp",
       title: "勤誠興業 CHENBRO 官方網站",
       techStack: ["Nuxt3", "Vue3", "TailwindCSS", "GSAP", "swiper","Docker", "Nginx", "Gitlab"],
       description:
-        "前端協作 | 大型官網重建",
+        "前端協作 | 大型官網重建 | 多國語系",
       logo: ConsultlyLogo,
       link: {
         label: "勤誠興業 CHENBRO",
@@ -397,11 +439,11 @@ export const RESUME_CN_DATA:ResumeData = {
       },
     },
     {
-      imageUrl: "https://i.ibb.co/WNDVzH07/og-img.jpg",
+      imageUrl: "/projects/venti.webp",
       title: "幫推事務所 VentiVenti 官方網站",
       techStack: ["Nuxt3", "Vue3", "TailwindCSS", "GSAP", "wordpress(CMS)", "PHP", "MariaDB", "Docker", "Nginx", "Gitlab"],
       description:
-        "前端協作 | 中型官網重建 | SEO優化",
+        "前端協作 | 中型官網重建 | SEO優化 | 多國語系",
       logo: ConsultlyLogo,
       link: {
         label: "幫推事務所 VentiVenti Consulting",
@@ -409,11 +451,11 @@ export const RESUME_CN_DATA:ResumeData = {
       },
     },
     {
-      imageUrl: "https://i.ibb.co/JWX0GtSc/2025-04-01-11-25-56.png",
+      imageUrl: "/projects/cmp.webp",
       title: "勤美術館 CMP Inspiration 官方網站",
       techStack: ["Nuxt3", "Vue3", "TailwindCSS", "GSAP", "wordpress(CMS)", "PHP", "MariaDB", "Docker", "Nginx", "Gitlab"],
       description:
-        "全端協作 | 中型官網重建 | SEO優化",
+        "全端協作 | 中型官網重建 | SEO優化 | 多國語系",
       logo: ConsultlyLogo,
       link: {
         label: "勤美術館 CMP Inspiration",
@@ -421,11 +463,11 @@ export const RESUME_CN_DATA:ResumeData = {
       },
     },
     {
-      imageUrl: "https://i.ibb.co/jzcSLkP/Blue-Alert.png",
+      imageUrl: "/projects/Blue-Alert.webp",
       title: "Blue Alert 藍色警戒",
       techStack: ["Side Project", "Vue3", "Sass", "Pinia","D3.js", "Chart.js", "Bootstrap5", "Git flow", "Fullcalendar", "GSAP", "PHP", "MySQL"],
       description:
-        "全端協作 | 領導團隊 | 0-1 開發",
+        "全端協作 | 領導團隊 | 敏捷開發",
       logo: ConsultlyLogo,
       link: {
         label: "BlueAlert",
@@ -433,7 +475,7 @@ export const RESUME_CN_DATA:ResumeData = {
       },
     },
     {
-      imageUrl: "https://i.ibb.co/mFjJKN5/broods.png",
+      imageUrl: "/projects/broods.webp",
       title: "寵物醫院商城",
       techStack: [
         "Side Project",

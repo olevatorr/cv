@@ -1,13 +1,13 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CommandMenu } from "@/components/command-menu";
 import { Section } from "@/components/ui/section";
 import { Button } from "@/components/ui/button";
-import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
+import { GlobeIcon, MailIcon, PhoneIcon, ExternalLink } from "lucide-react";
 import { ProjectCard } from "@/components/project-card";
 import { RESUME_DATA, RESUME_CN_DATA } from "@/data/resume-data";
 import { ResumeData } from '@/data/type';
@@ -17,6 +17,8 @@ import { ResumeData } from '@/data/type';
 export default function ResumeContent() {
     const [currentData, setCurrentData] = useState<ResumeData>(RESUME_CN_DATA);
     const [language, setLanguage] = useState<'EN' | 'CN'>('CN');
+    const [printMode, setPrintMode] = useState<'CV' | 'Resume'>('CV');
+    const [visibleProjectsCount, setVisibleProjectsCount] = useState<number>(0);
 
     const toggleLanguage = () => {
         if (language === 'EN') {
@@ -28,11 +30,38 @@ export default function ResumeContent() {
         }
     };
 
+    const togglePrintMode = () => {
+        setPrintMode(printMode === 'CV' ? 'Resume' : 'CV');
+    };
+
+    useEffect(() => {
+        const calculateVisibleProjects = () => {
+            if (printMode === 'Resume') {
+                const remainingHeight = window.innerHeight;
+                const projectHeight = 100;
+                const maxProjects = Math.floor(remainingHeight / projectHeight);
+                setVisibleProjectsCount(Math.min(maxProjects, 4));
+            } else {
+                setVisibleProjectsCount(currentData.projects.length);
+            }
+        };
+
+        calculateVisibleProjects();
+        window.addEventListener('resize', calculateVisibleProjects);
+        return () => window.removeEventListener('resize', calculateVisibleProjects);
+    }, [printMode, currentData.projects.length]);
+
+    const visibleProjects = printMode === 'Resume' 
+        ? currentData.projects.slice(0, visibleProjectsCount)
+        : currentData.projects;
+    
+    const hiddenProjectsCount = currentData.projects.length - visibleProjects.length;
+
     return (
         <section className="mx-auto w-full space-y-8 bg-white print:space-y-4">
             <div className="flex items-center justify-between">
                 <div className="flex-1 space-y-1.5">
-                    <h1 className="text-3xl font-bold">{currentData.name}</h1>
+                    <h1 className="text-3xl font-bold print:text-xl">{currentData.name}</h1>
                     <div className="flex gap-x-5">
                         <p className="max-w-md text-pretty font-mono text-base text-muted-foreground print:text-[12px]">
                             {currentData.about}
@@ -92,28 +121,33 @@ export default function ResumeContent() {
                     </div>
                 </div>
 
-                <Avatar className="size-40 print:size-[120px]">
+                <Avatar className="size-40 print:size-[100px]">
                     <AvatarImage alt={currentData.name} src={currentData.avatarUrl} />
                     <AvatarFallback>{currentData.initials}</AvatarFallback>
                 </Avatar>
             </div>
 
-            <Button onClick={toggleLanguage} className='print:hidden'>
-                {language === 'EN' ? '切換至繁體中文' : 'Switch to English'}
-            </Button>
+            <div className='print:hidden flex gap-2'>
+                <Button onClick={toggleLanguage}>
+                    {language === 'EN' ? '切換至繁體中文' : 'Switch to English'}
+                </Button>
+                <Button onClick={togglePrintMode} variant="outline">
+                    {printMode === 'CV' ? 'Resume模式' : 'CV模式'}
+                </Button>
+            </div>
 
             <Section>
                 <h2 className="text-xl font-bold print:text-base">About</h2>
-                <p className="text-pretty font-mono text-md text-muted-foreground print:text-[12px]">
+                <p className="text-pretty font-mono text-md text-muted-foreground print:text-[11px] print:leading-tight">
                     {currentData.summary}
                 </p>
             </Section>
 
             <Section>
                 <h2 className="text-xl font-bold print:text-base">Skills</h2>
-                <div className="flex flex-wrap gap-1">
+                <div className="flex flex-wrap gap-1 print:gap-0.5">
                     {currentData.skills.map((skill) => (
-                        <Badge className="print:text-[10px]" key={skill}>
+                        <Badge className="print:text-[9px] print:px-1 print:py-0" key={skill}>
                             {skill}
                         </Badge>
                     ))}
@@ -127,8 +161,12 @@ export default function ResumeContent() {
                         <CardHeader>
                             <div className="flex items-center justify-between gap-x-2 text-base print:text-[12px]">
                                 <h3 className="inline-flex items-start justify-center flex-col gap-y-2 mb-2 font-semibold leading-none">
-                                    <a className="hover:underline" href={work.link}>
+                                    <a className="hover:underline flex gap-x-3" href={work.link}>
                                         {work.company}
+                                        <span className="text-muted-foreground">|</span>
+                                        <span className="font-mono text-md leading-none print:text-[12px]">
+                                            {work.title}
+                                        </span>
                                     </a>
                                     {work.badges && work.badges.length > 0 && <span className="inline-flex gap-x-1">
                                         {work.badges.map((badge) => (
@@ -146,11 +184,8 @@ export default function ResumeContent() {
                                     {work.start} - {work.end ?? "Present"}
                                 </div>
                             </div>
-                            <h4 className="font-mono text-md leading-none print:text-[12px]">
-                                {work.title}
-                            </h4>
                         </CardHeader>
-                        <CardContent className="mt-2 pb-5 text-md print:text-[10px] print:leading-tight border-b whitespace-pre-line">
+                        <CardContent className="mt-2 pb-5 text-md print:text-[10px] print:leading-tight print:pb-2 border-b whitespace-pre-line">
                             {work.description}
                         </CardContent>
                     </Card>
@@ -158,7 +193,7 @@ export default function ResumeContent() {
             </Section>
 
             <Section>
-                <h2 className="text-xl font-bold">Education</h2>
+                <h2 className="text-xl font-bold print:text-base">Education</h2>
                 {currentData.education.map((education) => (
                     <Card key={education.school}>
                         <CardHeader>
@@ -169,7 +204,7 @@ export default function ResumeContent() {
                                 </div>
                             </div>
                         </CardHeader>
-                        <CardContent className="mt-2 print:text-[14px]">
+                        <CardContent className="mt-2 print:text-[12px]">
                             {education.degree}
                         </CardContent>
                     </Card>
@@ -177,7 +212,7 @@ export default function ResumeContent() {
             </Section>
 
             <Section className='pt-2'>
-                <h2 className="text-xl font-bold">Advanced Education</h2>
+                <h2 className="text-xl font-bold print:text-base">Advanced Education</h2>
                 {currentData.advanced.map((advanced) => (
                     <Card key={advanced.company}>
                         <CardHeader>
@@ -202,7 +237,7 @@ export default function ResumeContent() {
                                     {advanced.start} - {advanced.end ?? "Present"}
                                 </div>
                             </div>
-                            <h4 className="font-mono text-md leading-none print:text-[14px]">
+                            <h4 className="font-mono text-md leading-none print:text-[12px]">
                                 {advanced.title}
                             </h4>
                         </CardHeader>
@@ -214,9 +249,9 @@ export default function ResumeContent() {
             </Section>
 
             <Section className="scroll-mb-16">
-                <h2 className="text-xl font-bold">Projects</h2>
-                <div className="flex flex-col gap-y-2">
-                    {currentData.projects.map((project) => (
+                <h2 className="text-xl font-bold print:text-base">Projects</h2>
+                <div className="flex flex-col gap-y-2 print:gap-y-1">
+                    {visibleProjects.map((project) => (
                         <ProjectCard
                             key={project.title}
                             title={project.title}
@@ -226,15 +261,33 @@ export default function ResumeContent() {
                             imageUrl={project.imageUrl}
                         />
                     ))}
+                    {printMode === 'Resume' && hiddenProjectsCount > 0 && (
+                        <div className="hidden print:block mt-4 p-4 border border-muted rounded-lg bg-muted/30">
+                            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                                <ExternalLink className="size-4" />
+                                <span>
+                                    {language === 'CN' 
+                                        ? `尚有 ${hiddenProjectsCount} 個專案，請至個人網站查看更多詳細資訊：` 
+                                        : `${hiddenProjectsCount} more projects available. Please visit my website for details:`
+                                    }
+                                </span>
+                            </div>
+                            <a className="mt-2 font-mono text-sm font-semibold">
+                                https://otischen.site/
+                            </a>
+                        </div>
+                    )}
                 </div>
             </Section>
 
-            <Section className="">
-                <h2 className="text-xl font-bold">Autobiography</h2>
-                <div className="whitespace-pre-line">
-                    {currentData.bio}
-                </div>
-            </Section>
+            {printMode === 'CV' && (
+                <Section className="">
+                    <h2 className="text-xl font-bold print:text-base">Autobiography</h2>
+                    <div className="whitespace-pre-line print:text-[11px] print:leading-tight">
+                        {currentData.bio}
+                    </div>
+                </Section>
+            )}
 
             <CommandMenu
                 links={[
