@@ -4,8 +4,7 @@ export type ResumeData = {
     location: string;
     locationLink: string;
     about: string;
-    slogan: string;
-    summary: string;
+        summary: string;
     avatarUrl: string;
     contact: {
         email: string;

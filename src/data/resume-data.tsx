@@ -6,7 +6,7 @@ import {
   ParabolLogo,
   YearProgressLogo,
 } from "@/images/logos";
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { GitHubIcon, LinkedInIcon, PortfolioIcon } from "@/components/icons";
 import { ResumeData } from '@/data/type';
 
 
@@ -17,7 +17,6 @@ export const RESUME_DATA:ResumeData = {
   location: "Zhongli, Taoyuan, Taiwan",
   locationLink: "https://maps.app.goo.gl/AMvSWuNNUMALzuNM8",
   about: "Frontend Developer focused on logical problem-solving and continuous learning of new technologies",
-  slogan: "Precision in code, logic in action",
   summary: "Specializing in Nuxt 3 and Tailwind CSS development for high-performance interactive websites. Proficient in pixel-perfect UI implementation and animation effects using GSAP, Three.js, and p5.js. Independently developed multiple medium to large-scale websites, responsible for frontend architecture design, WordPress CMS setup, RESTful API integration, and SEO optimization. Participated in over 5 medium to large-scale dynamic website team collaborations, specializing in modular architecture planning and visual interaction effects implementation. Emphasizes performance optimization and team collaboration, skilled in writing API documentation to improve development efficiency.",
   avatarUrl: "https://avatars.githubusercontent.com/u/166091382?v=4",
   contact: {
@@ -250,10 +249,9 @@ export const RESUME_CN_DATA:ResumeData = {
   location: "桃園中壢區, 台灣",
   locationLink: "https://maps.app.goo.gl/AMvSWuNNUMALzuNM8",
   about:
-    "前端工程師  專注於以邏輯解決問題並不斷學習新技術，增強自我Coding實力",
-  slogan: "Precision in code, logic in action",
+    "前端工程師",
   summary:
-    "專精於Nuxt 3與Tailwind CSS開發高效能互動網站。擅長像素級UI還原及GSAP、Three.js、p5.js動畫特效實作。獨立開發過多個中大型網站，負責前端架構設計、WordPress CMS建置、RESTful API串接及SEO優化。參與過5個以上中大型動態網站團隊協作，專責模組化架構規劃及視覺互動效果實現。注重效能優化及團隊合作，善於撰寫API規格文件提升開發效率。興趣包括攝影、音樂、重訓和旅行。",
+    "專精於Nuxt 3、Next.js與Tailwind CSS開發高效能互動網站。擅長像素級UI還原及GSAP、Three.js、p5.js動畫特效實作。獨立開發過多個中大型網站，負責前端架構設計、WordPress CMS建置、RESTful API串接及SEO優化。參與過5個以上中大型動態網站團隊協作，專責模組化架構規劃及視覺互動效果實現。注重效能優化及團隊合作，善於撰寫API規格文件提升開發效率。",
   avatarUrl: "https://avatars.githubusercontent.com/u/166091382?v=4",
   contact: {
     email: "otis0059@gmail.com",
@@ -269,6 +267,11 @@ export const RESUME_CN_DATA:ResumeData = {
         url: "https://www.linkedin.com/in/otis-chen-504a22166/",
         icon: LinkedInIcon,
       },
+      {
+        name: "Perfolio",
+        url: "https://otischen.site/",
+        icon: PortfolioIcon,
+      }
     ],
   },
   bio: "您好，我是陳昇志，目前居住於桃園中壢，是一名對網頁開發充滿熱情的前端工程師。我擅長使用 Nuxt 3、Vue.js 和 Tailwind CSS 打造高效能、可擴展的動態網站，並結合過去業務工作的執行力與溝通技巧，在技術領域中追求卓越與創新。\n\n學習與技術經歷:\n我目前在版塊設計（Block Studio）擔任前端工程師，這是一家專注於網頁設計與品牌識別的台灣設計工作室。在這裡，我負責中大型網站的前端開發，使用 HTML5、CSS3 和 JavaScript (ES6+) 打造響應式介面，並以 Nuxt 3 和 Vue.js 3（熟悉 <script setup>、Composition API 和 Options API）實現動態功能。版塊設計的專案強調模組化設計（block design），我將 UI 拆分成可重複使用的組件，確保程式碼模組化與可維護性，並用 Tailwind CSS 手刻介面，精準還原設計師的獨特創意。我特別擅長用 GSAP、Three.js 和 Spline 加入流暢的動畫效果，例如 SVG 畫線動態與 3D 互動，提升使用者體驗。\n\n我還負責 SEO 優化（Nuxt sitemap、JSON-LD）和數據整合（GTM、GA4），提升網站搜尋排名與商業價值。在後端方面，我用 PHP 和 MySQL 搭建 WordPress CMS，設計 RESTful API，串接外部資料（如政府開放平台或氣象資料）。我習慣用 Git 管理版本，搭配 Docker 確保部署順暢，並撰寫 API 文件，讓團隊協作更有效率。\n\n在此之前，我於 2024 年 7 月完成 Tibame 中壢職訓中心的前端工程師培訓，學習 HTML5、CSS3、JavaScript、SASS、Vue 3 和 Pinia。我完成個人專題練習原生 JavaScript，並擔任 7 人團隊專題「BlueAlert 藍色警戒」的組長，負責時程規劃與技術協調，培養了我的領導能力。\n\n職場經歷:\n目前在版塊設計的工作中，我獨立完成了一個中型網站專案，結合 Nuxt 3 和 WordPress CMS，實現 3D 動態（Spline）、全站 GSAP 動畫和動態 sitemap，還參與了 4 個團隊專案，與設計師、後端工程師合作，確保 UI 精準呈現並優化效能（Lazy Loading、LCP 調整）。這些經驗讓我從技術到專案管理都更加成熟。\n\n轉職前，我曾在 PNY Technologies Asia Pacific Limited（NVIDIA AIC 合作夥伴）擔任業務專員，管理線上商城（PChome、MOMO、蝦皮），將蝦皮銷售額從零提升至每月 200 萬，主力平台與 B2B 交易達 1,000-2,000 萬。這段經歷磨練了我的跨部門溝通與執行力，對現在與設計師、後端團隊的協作有很大幫助。更早前，我在華夏玻璃股份有限公司擔任業務員，將月銷售額從 400-600 萬提升至 1,500~2,000 萬，展現了我的策略規劃能力。\n\n個人特質與技能:\n我喜歡用邏輯拆解問題，設計高效解法，時間管理能力讓我能同時處理多任務並準時交付。快速學習與自我解決問題是我最大的優勢，過去業務經驗也讓我在團隊中擅長溝通協調，幫助同事克服技術難題。\n\n職業發展規劃:\n短期（1-3 年）：深化前端技術（Nuxt 3、動畫效果），探索 React/Next.js，提升靈活性。\n中期（3-5 年）：學習後端技術（Java、Python等），朝全端工程師發展，打造完整解決方案。\n長期：持續追蹤業界趨勢，成為具影響力的技術專家。\n我希望結合技術實力與協作經驗，為團隊帶來價值，並在網頁開發領域持續成長！",
@@ -290,7 +293,7 @@ export const RESUME_CN_DATA:ResumeData = {
     {
       company: "Tibame緯育中壢職訓中心",
       link: "https://www.tibame.com/",
-      badges: [null],
+      badges: [],
       title: "前端工程師課程",
       logo: ConsultlyLogo,
       start: "2024.3",
@@ -301,20 +304,31 @@ export const RESUME_CN_DATA:ResumeData = {
   ],
   work: [
     {
+      company: "亞璿資訊有限公司 YS-Inforware",
+      link: "",
+      badges: ["Nuxt3", "Vue3", "TailwindCSS", "PrimeVue", "docker", "gitlab"],
+      title: "前端工程師",
+      logo: ConsultlyLogo,
+      start: "2025.5",
+      end: null,
+      description:
+        "企業級資料管理以及流程管理系統，使用Nuxt3框架重構開發，達到多API以及資料響應式處理的SSR、CSR。\n\n 　　套件導入 - 導入PrimeVue實現企業級UI設計，以解決傳統UI和與Vue3的相容性問題導致的效能痛點\n　　架構重建- 重構專案核心功能，跳脫過往效能、UI/UX以及擴展性極差的缺點\n　　統一風格 - 一致化團隊開發風格，提升開發效率和品質\n　　使用者體驗 - 簡化使用者操作流程，提升使用者體驗\n　　框架 - 使用Nuxt3框架重構開發企業級資料管理以及流程管理系統，達到多API以及資料響應式處理的SSR、CSR\n　　團隊協作 - 與前後端工程師協作討論，以新架構實現多種功能",
+    },
+    {
       company: "版塊創意有限公司 BlockStudio",
       link: "https://blockstudio.tw/",
       badges: ["Nuxt3", "Vue3", "TailwindCSS", "PHP", "MySQL", "Docker", "Nginx", "Gitlab", "WordPress"],
       title: "前端工程師",
       logo: ConsultlyLogo,
       start: "2024.8",
-      end: null,
+      end: "2025.4",
       description:
         "可獨立作業且擁有豐富的專案經驗，熟悉WordPress、PHP、Docker、Nginx、Gitlab等技術。 \n \n　　獨立作業 - 目前完成一個中型官網，進行中有一個大型專案和一個豐富動態的Landing page \n　　團隊協作 - 五個以上的協作專案，符合一致的團隊coding style \n　　專案管理 - 多項專案同時進行時間分配 \n　　效能優化 - 針對網站載入速度和使用者體驗進行優化 \n　　SEO優化 - 實施搜尋引擎優化策略，提升網站在搜尋結果中的排名和可見度 \n　　問題解決能力 - 系統性分析並解決複雜的技術挑戰，確保專案順利進行",
     },
     {
-      company: "PNY Technologies Asia Pacific Limited 必恩威亞太有限公司",
+      company: "美商必恩威亞太有限公司 PNY Technologies Asia Pacific Limited",
       link: "https://www.pny.com.tw/tw/",
-      badges: [null],
+      badges: [],
       title: "業務專員",
       logo: ConsultlyLogo,
       start: "2021.10",
@@ -325,7 +339,7 @@ export const RESUME_CN_DATA:ResumeData = {
     {
       company: "華夏玻璃股份有限公司",
       link: "https://www.hwahsiaglass.com/tw",
-      badges: [null],
+      badges: [],
       title: "國外業務專員",
       logo: ParabolLogo,
       start: "2020.6",
@@ -335,21 +349,27 @@ export const RESUME_CN_DATA:ResumeData = {
     },
   ],
   skills: [
-    "Nuxt3",
+    "Nuxt.js",
     "Next.js",
-    "docker",
-    "Vue3",
-    "TailwindCSS v3",
-    "TailwindCSS v4",
+    "Vue.js",
+    "React.js",
+    "TailwindCSS v3/v4",
+    "HTML",
+    "CSS",
     "JavaScript",
+    "docker",
     "Sass",
+    "Node.js",
+    "Express.js",
     "Git",
     "GitLab",
+    "swagger",
+    "Figma",
     "PHP",
     "MySQL",
     "jQuery",
-    "HTML5",
-    "Node.js",
+    "Java",
+    "Python"
   ],
   projects: [
     {
@@ -357,7 +377,7 @@ export const RESUME_CN_DATA:ResumeData = {
       title: "非我設計 Unme Design 官方網站",
       techStack: ["Nuxt3", "Vue3", "TailwindCSS", "GSAP", "swiper", "wordpress(CMS)","PHP", "MariaDB", "Docker", "Nginx", "Gitlab"],
       description:
-        `這個專案是我從頭到尾獨自開發的企業官網，使用WordPress作為CMS系統，前端則採用Nuxt3框架搭配多種動態技術。 \n \n我的工作內容包括: \n　　視覺動態效果 - 運用GSAP實現滾動觸發動畫、元素過渡效果和互動體驗 \n　　3D互動元素 - 整合Spline技術，打造沉浸式3D產品展示和互動場景 \n　　響應式設計 - 確保網站在所有裝置上呈現最佳視覺效果和使用體驗 \n　　CMS整合 - 建立WordPress與Nuxt3的無縫連接，實現高效內容管理 \n　　效能優化 - 針對大量動態元素進行載入優化，確保流暢的使用者體驗 \n　　全站SEO - 實施完整的搜尋引擎優化策略，提升品牌在線可見度`,
+        "全端獨立開發 | 中型官網重建 | SEO優化",
       logo: ConsultlyLogo,
       link: {
         label: "非我設計 Unme Design",
@@ -369,7 +389,7 @@ export const RESUME_CN_DATA:ResumeData = {
       title: "勤誠興業 CHENBRO 官方網站",
       techStack: ["Nuxt3", "Vue3", "TailwindCSS", "GSAP", "swiper","Docker", "Nginx", "Gitlab"],
       description:
-        `參與開發大型企業官網專案，主要負責產品、夥伴及服務與支援三大核心區塊的前端開發，並參與專案收尾階段的全面除錯與優化工作。 \n \n我的貢獻包括: \n　　產品(/product) - 開發複雜的產品分類與篩選功能，實現直覺化的產品瀏覽體驗 \n　　夥伴關係平台(/partners) - 建立互動式夥伴地圖與查詢系統，優化使用者尋找合作夥伴的流程 \n　　服務與支援中心(/support) - 實作多層級的技術支援系統，整合下載中心與FAQ功能 \n　　跨瀏覽器兼容性 - 確保所有功能在各主流瀏覽器中正常運作 \n　　專案收尾 - 系統性除錯與效能優化，確保網站穩定運行並順利結案`,
+        "前端協作 | 大型官網重建",
       logo: ConsultlyLogo,
       link: {
         label: "勤誠興業 CHENBRO",
@@ -381,7 +401,7 @@ export const RESUME_CN_DATA:ResumeData = {
       title: "幫推事務所 VentiVenti 官方網站",
       techStack: ["Nuxt3", "Vue3", "TailwindCSS", "GSAP", "wordpress(CMS)", "PHP", "MariaDB", "Docker", "Nginx", "Gitlab"],
       description:
-        `專注於網站SEO全面優化，提升搜尋引擎可見度與排名。透過系統性的技術實作，大幅改善網站在搜索結果中的表現。 \n \n我的貢獻包括: \n　　SEO技術優化 - 實作robot.txt與sitemap配置，確保搜尋引擎正確索引網站內容 \n　　結構化資料 - 導入JSON-LD標記，強化Local Business資訊在搜尋結果中的呈現 \n　　多語系SEO - 實作hreflang標籤，優化多國語系內容的搜尋引擎識別 \n　　HTML語意化 - 全站HTML標籤優化，提升內容可讀性與搜尋引擎理解度 \n　　技術SEO - 改善網站載入速度、行動裝置相容性等技術因素，提升整體SEO表現`,
+        "前端協作 | 中型官網重建 | SEO優化",
       logo: ConsultlyLogo,
       link: {
         label: "幫推事務所 VentiVenti Consulting",
@@ -393,7 +413,7 @@ export const RESUME_CN_DATA:ResumeData = {
       title: "勤美術館 CMP Inspiration 官方網站",
       techStack: ["Nuxt3", "Vue3", "TailwindCSS", "GSAP", "wordpress(CMS)", "PHP", "MariaDB", "Docker", "Nginx", "Gitlab"],
       description:
-        `參與專案後期開發與優化工作，專注於系統穩定性提升和功能完善。主要負責關鍵問題修復、效能優化和使用者體驗改進。 \n \n我的貢獻包括: \n　　系統除錯 - 識別並解決複雜的前端互動問題和資料呈現錯誤\n　　跨瀏覽器兼容性 - 確保網站在各主流瀏覽器中呈現一致且功能正常 \n　　WordPress整合 - 優化CMS與前端框架的連接，確保資料流暢傳輸 \n　　程式碼重構 - 改善既有程式碼結構，提升可維護性和擴展性`,
+        "全端協作 | 中型官網重建 | SEO優化",
       logo: ConsultlyLogo,
       link: {
         label: "勤美術館 CMP Inspiration",
@@ -405,7 +425,7 @@ export const RESUME_CN_DATA:ResumeData = {
       title: "Blue Alert 藍色警戒",
       techStack: ["Side Project", "Vue3", "Sass", "Pinia","D3.js", "Chart.js", "Bootstrap5", "Git flow", "Fullcalendar", "GSAP", "PHP", "MySQL"],
       description:
-        `帶領七人團隊開發全端網頁應用程式，運用Vue3的script setup/Composition API/Options API進行前端開發，整合多元函式庫以提升使用者體驗，並以PHP、MySQL實作後端解決方案，同時串接外部API。 \n \n我負責的為\n前台: \n　　首頁切版/功能 - [ GSAP卷軸動畫、GSAP數字動畫、D3台灣地圖渲染、Chart.js圖表渲染、Vue3對比圖功能、Vue3問卷調查、GSAP輪播 ] \n　　客服機器人 - [ Vue3對話顯示、GSAP打字動畫 ] \n\n後台: \n　　Bootstrap5 切版(全後台)\n　　管理員系統 - [ Pinia狀態管理、cookies暫存 ] \n\nPHP - [ 新增/修改含圖片處理模板 ]\n\nMySQL - [ 資料庫所有Table邏輯串接以及資料搭建、效能優化 ]\n\n其他 - [ 制定專案日程表、組員溝通協調、技術難題解決、工作分配與進度追蹤 ]`,
+        "全端協作 | 領導團隊 | 0-1 開發",
       logo: ConsultlyLogo,
       link: {
         label: "BlueAlert",
@@ -421,59 +441,12 @@ export const RESUME_CN_DATA:ResumeData = {
         "CSS3",
         "HTML",
       ],
-      description: "運用原生JavaScript開發全方位的獸醫院網站，實作預約掛號和電子商務等進階功能，藉此強化核心JS技能，並展現DOM操作和LocalStorage應用的專業能力。 \n \n我實現的功能包括\n前端效果: \n　　AOS動畫效果 - [ 使用原生JS實現Animate On Scroll效果 ] \n　　Google Maps整合 - [ 運用Google Maps API渲染每個醫院位置 ] \n\n會員系統: \n　　註冊/登入功能 - [ 使用LocalStorage實現資料儲存和驗證 ]\n\n電子商務: \n　　商品展示 - [ 使用陣列物件方式動態渲染商品卡片 ] \n　　購物車功能 - [ LocalStorage實現新增/修改購物車內容 ] \n　　折扣碼系統 - [ 實現折扣碼輸入和總金額動態計算 ] \n　　商品篩選 - [ 使用filter方法實現商品篩選功能 ]\n\n其他: \n　　原生JS技巧展示 - [ DOM操作、事件處理、非同步編程 ] \n　　效能優化 - [ 代碼重構、最佳實踐應用 ]",
+      description: "前端獨立開發 | 原生JavaScript | Google Maps API",
       logo: ConsultlyLogo,
       link: {
         label: "Broods.com",
         href: "https://personal-project-iota.vercel.app/",
       },
-    },
-    {
-      imageUrl: "",
-      title: "代辦清單",
-      techStack: ["Side Project", "Vue3", "TailwindCSS"],
-      description:
-        "運用Vue的v-model和計算屬性實現動態待辦事項列表，用以管理輸入/輸出並渲染列表項目。系統允許使用者點擊「移除」按鈕來刪除項目，該操作會從陣列中剔除對應的索引。當項目被勾選時，會通過JavaScript的sort()方法自動將其移至列表末尾。",
-      logo: JarockiMeLogo,
-      link: {
-        label: "github.com",
-        href: "https://vue-project-olevatorrs-projects.vercel.app/",
-      },
-    },
-    {
-      imageUrl: "",
-      title: "天氣 API",
-      techStack: ["Side Project", "Vue3", "D3.js", "topojson","TailwindCSS"],
-      description:
-        "透過串接氣象資料開放平台API並渲染天氣一週預報以及各資料處理，在使用topojson降低geojson檔案過大問題，並且在透過D3.js將台灣地圖選染並註冊click事件，以達到互動式天氣查詢。",
-      logo: Minimal,
-      link: {
-        label: "github.com",
-        href: "https://vue-project-olevatorrs-projects.vercel.app/",
-      },
-    },
-    {
-      imageUrl: "",
-      title: "任務管理系統",
-      techStack: ["Side Project", "Vue3", "TailwindCSS"],
-      description:
-        "設計了一個任務管理系統，包含「待辦」、「進行中」和「已完成」三個區域，運用空陣列和HTML5 Drag API。任務可通過dataTransfer方法在區域間移動，實現對應陣列的推入或剔除操作。",
-      logo: BarepapersLogo,
-      link: {
-        label: "barepapers.com",
-        href: "https://vue-project-olevatorrs-projects.vercel.app/",
-      },
-    },
-    {
-      imageUrl: "",
-      title: "購物車",
-      techStack: ["Side Project", "Vue3", "TailwindCSS", "Pinia"],
-      description: "使用Pinia狀態管理系統來製作加入購物車系統，並且能透過v-model來實現模糊篩選。",
-      logo: YearProgressLogo,
-      link: {
-        label: "getyearprogress.com",
-        href: "https://vue-project-olevatorrs-projects.vercel.app/",
-      },
-    },
+    }
   ],
 } as const;
